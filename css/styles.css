@@ -23,13 +23,13 @@
   font-style: normal;
 }
 .header {
-  background-image: url("../img/header-bg.jpg");
-  background-repeat: no-repeat;
-  padding: 320px 0 420px;
-  background-position: center 300px;
+  padding: 10px 0;
+  font-size: 32px;
+  font-weight: 400;
+  background-color: antiquewhite;
 }
 .header__container {
-  max-width: 1440px;
+  max-width: 1180px;
   display: flex;
 }
 .header__left {

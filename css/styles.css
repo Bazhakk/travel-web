@@ -37,6 +37,10 @@
   margin-left: auto;
 }
 
+.logo {
+  max-height: 32px;
+  margin-left: auto;
+}
 .logo svg {
   max-height: 32px;
 }
@@ -44,17 +48,18 @@
 .mobile-menu {
   display: none;
 }
-@media screen and (max-width: 1024px) {
-  .mobile-menu {
-    display: flex;
-  }
-}
 
 .main-menu {
   display: flex;
   align-items: center;
   font-size: 18px;
   line-height: 22px;
+}
+.main-menu__link {
+  padding: 0 32px;
+  margin-left: 24px;
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

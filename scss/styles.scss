@@ -2,39 +2,44 @@
 @import "fonts";
 
 .header {
-    background-image: url("../img/header-bg.jpg");
-    background-repeat: no-repeat;
-    padding: 320px 0 420px;
-    background-position: center 300px;
+  background-image: url("../img/header-bg.jpg");
+  background-repeat: no-repeat;
+  padding: 320px 0 420px;
+  background-position: center 300px;
 
-    &__container {
+  &__container {
     max-width: 1440px;
     display: flex;
 }
-
-    &__left {
+  &__left {
     display: flex;
     margin-left: auto;
-  }
+}
 }
 
 .logo {
-    svg {
-     max-height: 32px;
-      }
+  max-height: 32px;
+  margin-left: auto;
+  
+  svg {
+   max-height: 32px;
+}
 }
 
 .mobile-menu {
-    display: none;
-  
-    @media screen and (max-width: 1024px) {
-      display: flex;
-    }
-  }
+  display: none;
+}
 
-  .main-menu {
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-    line-height: 22px;
-  }
+.main-menu {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  line-height: 22px;
+
+  &__link {
+    padding: 0 32px;
+    margin-left: 24px;
+    color: $wite-color;
+    text-decoration: none;
+}
+}

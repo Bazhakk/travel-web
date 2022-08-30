@@ -22,5 +22,39 @@
   font-weight: 400;
   font-style: normal;
 }
+.header {
+  background-image: url("../img/header-bg.jpg");
+  background-repeat: no-repeat;
+  padding: 320px 0 420px;
+  background-position: center 300px;
+}
+.header__container {
+  max-width: 1440px;
+  display: flex;
+}
+.header__left {
+  display: flex;
+  margin-left: auto;
+}
+
+.logo svg {
+  max-height: 32px;
+}
+
+.mobile-menu {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .mobile-menu {
+    display: flex;
+  }
+}
+
+.main-menu {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  line-height: 22px;
+}
 
 /*# sourceMappingURL=styles.css.map */

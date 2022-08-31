@@ -1,14 +1,18 @@
 @import "variables";
 @import "fonts";
 
-.header {
-  padding: 32px 0;
+.box {
   font-size: 32px;
   font-weight: 400;
   background-image: url("../img/header-bg.jpg");
   background-repeat: no-repeat;
   padding: 320px 0 420px;
   background-position: center 300px;
+}
+
+.header {
+  padding: 32px 0;
+  
 
   &__container {
     max-width: 1180px;
@@ -48,7 +52,14 @@
     text-decoration: none;
   }
 }
-.block {
+
+//HERO
+
+.hero {
+  background-color: aquamarine;
+  margin: 0 auto;
+  padding: 290px 600px 480px;
+  
   &__text,
   &__slogan {
     font-family: 'Readex Pro';
@@ -100,10 +111,3 @@
     }
   }
 }
-
-
-
-
-
-//HERO
-

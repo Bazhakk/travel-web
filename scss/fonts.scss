@@ -33,4 +33,14 @@
     font-weight: 600;
     font-style: normal;
    }
-  
+
+   //pacifico - regular 400
+   @font-face {
+     font-family: 'pacifico';
+    src: url('../fonts/Pacifico-Regular.eot') format('embedded-opentype'),
+         url('../fonts/Pacifico-Regular.svg') format('svg'),
+         url('../fonts/Pacifico-Regular.woff') format('woff'),
+         url('../fonts/Pacifico-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+   }

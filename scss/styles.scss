@@ -1,3 +1,49 @@
 @import "variables";
 @import "fonts";
 
+.header {
+  padding: 10px 0;
+  font-size: 32px;
+  font-weight: 400;
+  background-color: antiquewhite;
+  //background-image: url("../img/header-bg.jpg");
+  //background-repeat: no-repeat;
+  //padding: 320px 0 420px;
+  //background-position: center 300px;
+
+  &__container {
+    max-width: 1180px;
+    display: flex;
+}
+  &__left {
+    display: flex;
+    margin-left: auto;
+}
+}
+
+.logo {
+  max-height: 32px;
+  margin-left: auto;
+  
+  svg {
+   max-height: 32px;
+}
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.main-menu {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  line-height: 22px;
+
+  &__link {
+    padding: 0 32px;
+    margin-left: 24px;
+    color: $wite-color;
+    text-decoration: none;
+}
+}

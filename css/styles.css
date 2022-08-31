@@ -1,3 +1,65 @@
-@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600&display=swap");
+@font-face {
+  font-family: "readex";
+  src: url("../fonts/ReadexPro-Regular.eot") format("embedded-opentype"), url("../fonts/ReadexPro-Regular.svg") format("svg"), url("../fonts/ReadexPro-Regular.woff") format("woff"), url("../fonts/ReadexPro-Regular.woff2") format("woff2"), url("../fonts/ReadexPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "readex";
+  src: url("../fonts/ReadexPro-Medium.eot") format("embedded-opentype"), url("../fonts/ReadexPro-Medium.svg") format("svg"), url("../fonts/ReadexPro-Medium.woff") format("woff"), url("../fonts/ReadexPro-Medium.woff2") format("woff2"), url("../fonts/ReadexPro-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "readex";
+  src: url("../fonts/ReadexPro-SemiBold.eot") format("embedded-opentype"), url("../fonts/ReadexPro-SemiBold.svg") format("svg"), url("../fonts/ReadexPro-SemiBold.woff") format("woff"), url("../fonts/ReadexPro-SemiBold.woff2") format("woff2"), url("../fonts/ReadexPro-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "pacifico";
+  src: url("../fonts/Pacifico-Regular.eot") format("embedded-opentype"), url("../fonts/Pacifico-Regular.svg") format("svg"), url("../fonts/Pacifico-Regular.woff") format("woff"), url("../fonts/Pacifico-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+.header {
+  padding: 10px 0;
+  font-size: 32px;
+  font-weight: 400;
+  background-color: antiquewhite;
+}
+.header__container {
+  max-width: 1180px;
+  display: flex;
+}
+.header__left {
+  display: flex;
+  margin-left: auto;
+}
+
+.logo {
+  max-height: 32px;
+  margin-left: auto;
+}
+.logo svg {
+  max-height: 32px;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.main-menu {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  line-height: 22px;
+}
+.main-menu__link {
+  padding: 0 32px;
+  margin-left: 24px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
 
 /*# sourceMappingURL=styles.css.map */

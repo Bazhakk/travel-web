@@ -1,3 +1,4 @@
+@import "common";
 @import "variables";
 @import "fonts";
 
@@ -92,4 +93,34 @@
   max-width: 923px;
   margin: 0 auto;
   padding: 100px 260px;
+  margin: 50px;
+
+
+  &__about {
+    display: flex;
+    margin: 32px;
+    
+  }
+
+
+  &__title,
+  &__text {
+    font-family: 'Readex Pro';
+    align-items: center;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    $black-color:#202020;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: $gr-color;
+  }
+
 }

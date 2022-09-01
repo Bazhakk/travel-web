@@ -61,7 +61,7 @@
   padding: 290px 600px 480px;
   
   &__text,
-  &__slogan {
+  &__title {
     font-family: 'Readex Pro';
     margin: o auto;
     display: flex;
@@ -76,7 +76,7 @@
     line-height: 30px;
   }
 
-  &__slogan {
+  &__title {
     font-weight: 400;
     font-size: 48px;
     line-height: 60px;

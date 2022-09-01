@@ -1,5 +1,6 @@
 @import "variables";
 @import "fonts";
+@import "common";
 
 
 .header {
@@ -57,6 +58,12 @@
   padding: 320px 0 420px;
   background-position: center 300px;
   
+  &__container {
+    margin: 0 auto;
+    //padding: ;
+    align-items: center;
+  }
+
   &__text,
   &__title {
     font-family: 'Readex Pro';
@@ -80,33 +87,12 @@
     line-height: 60px;
   }
 
-  &__explore {
-    max-width: 90px;
-    max-height: 38px;
-    padding: 10px 18px;
-    gap: 10px;
-    border-radius: 8px;
-    background-color: $green-color;
-    color: $wite-color;
-
-    &_text {
-      font-family: 'Readex Pro';
-      font-weight: 600;
-      font-size: 14px;
-      line-height: 18px;
-      display: flex;
-      align-items: center;
-      text-align: center;
-      color: $wite-color;
-    }
-
     &__icon {
       //max-width: 160px;
       max-width: 32px;
       max-height: 32px;
       color: $wite-color;
     }
-  }
 }
 
 
@@ -141,6 +127,7 @@
   font-size: 32px;
   line-height: 40px;
   color: $black-color;
+  margin-bottom: 24px;
 }
 
 &__text {
@@ -148,6 +135,7 @@
   font-size: 18px;
   line-height: 22px;
   color: $gr-color;
+  margin-bottom: 32px;
 }
 
 

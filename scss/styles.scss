@@ -276,7 +276,7 @@
   }
 
   &__img {
-    //smargin: 16px;
+    //margin: 16px;
     border-radius: 10px;
 
     &_1,
@@ -384,3 +384,43 @@
 
 }
 
+// CONCLUSION 
+
+.conclusion {
+  margin: 0 auto;
+  padding: 184px 130px;
+
+  &__block {
+    max-width: 1180px;
+    max-height: 334px;
+    border-radius: 16px;
+    background: $green-color;
+  }
+
+  &__title {
+    //padding: 85px 300px;
+    padding-top: 85px;
+    font-family: 'Readex Pro';
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    align-items: center;
+    text-align: center;
+    color: $wite-color;
+  }
+
+  &__text {
+    font-family: 'Readex Pro';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    align-items: center;
+    text-align: center;
+    color: $wite-color;
+  }
+
+  // &__button {
+  //   padding: 24px 517px;
+  // }
+
+}

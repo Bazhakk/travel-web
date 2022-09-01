@@ -59,9 +59,10 @@
   background-position: center 300px;
   
   &__container {
-    margin: 0 auto;
-    //padding: ;
+    display: block;
+    justify-content: space-between;
     align-items: center;
+    padding: 250px 320px 25px;
   }
 
   &__text,
@@ -75,10 +76,11 @@
   }
 
   &__text {
-    //padding: 290px 600px;
+    justify-content: center;
     font-weight: 600;
     font-size: 24px;
     line-height: 30px;
+    margin-bottom: 24px;
   }
 
   &__title {
@@ -88,6 +90,7 @@
   }
 
     &__icon {
+      justify-content: center;
       //max-width: 160px;
       max-width: 32px;
       max-height: 32px;

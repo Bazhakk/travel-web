@@ -170,17 +170,17 @@ ul {
 .presentacion__img {
   position: absolute;
 }
-.presentacion__img_1 {
+.presentacion__img_1, .presentacion__img_2 {
   max-width: 200px;
-  top: 934px;
-  left: 240px;
   border-radius: 10px;
 }
+.presentacion__img_1 {
+  top: 934px;
+  left: 240px;
+}
 .presentacion__img_2 {
-  max-width: 200px;
   top: 900px;
   left: 470px;
-  border-radius: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */

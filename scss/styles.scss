@@ -424,3 +424,25 @@
   // }
 
 }
+
+
+//FOOTER
+
+.footer {
+
+  &__block {
+    max-width: 1440px;
+    max-height: 84px;
+    background: $green-color;
+  }
+
+  &__text {
+    font-family: 'Readex Pro';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
+    color: $wite-color;
+  }
+}

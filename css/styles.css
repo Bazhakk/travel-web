@@ -426,4 +426,19 @@ ul {
   color: #FFFFFF;
 }
 
+.footer__block {
+  max-width: 1440px;
+  max-height: 84px;
+  background: #2B6F3E;
+}
+.footer__text {
+  font-family: "Readex Pro";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+
 /*# sourceMappingURL=styles.css.map */

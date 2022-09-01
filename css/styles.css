@@ -214,6 +214,12 @@ ul {
 .discover__img_1 {
   max-width: 274px;
 }
+.discover__img_2 {
+  max-width: 316px;
+}
+.discover__img_3 {
+  max-width: 274px;
+}
 .discover__title {
   font-family: "Readex Pro";
   font-weight: 500;
@@ -231,7 +237,7 @@ ul {
 }
 .discover__pakis_logo {
   position: absolute;
-  bottom: 70px;
+  bottom: 30px;
   font-family: "Readex Pro";
   font-weight: 600;
   font-size: 24px;
@@ -247,9 +253,46 @@ ul {
 }
 .discover__suluban {
   position: relative;
-  max-width: 316px;
+  max-width: 176px;
   padding-bottom: 30px;
   padding-left: 24px;
+}
+.discover__suluban_logo {
+  font-family: "Readex Pro";
+  bottom: 30px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+.discover__suluban_text {
+  font-family: "Readex Pro";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+.discover__karimun {
+  position: relative;
+  max-width: 195px;
+  padding-bottom: 30px;
+  padding-left: 24px;
+}
+.discover__karimun_logo {
+  position: absolute;
+  bottom: 30px;
+  font-family: "Readex Pro";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+.discover__karimun_text {
+  font-family: "Readex Pro";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -203,21 +203,19 @@ ul {
 .discover {
   margin: 0 auto;
   max-width: 930px;
+  padding: 100px 256px;
 }
 .discover__box {
   display: flex;
 }
 .discover__img {
-  margin: 32px;
+  margin: 16px;
 }
-.discover__img_1 {
+.discover__img_1, .discover__img_3 {
   max-width: 274px;
 }
 .discover__img_2 {
   max-width: 316px;
-}
-.discover__img_3 {
-  max-width: 274px;
 }
 .discover__title {
   font-family: "Readex Pro";
@@ -257,6 +255,7 @@ ul {
   padding-left: 24px;
 }
 .discover__suluban_logo {
+  position: absolute;
   font-family: "Readex Pro";
   bottom: 30px;
   font-weight: 600;
@@ -296,18 +295,24 @@ ul {
 
 .explore {
   max-width: 950px;
-  margin: 0 auto;
-  padding-left: 245px;
+}
+.explore__title {
+  font-family: "Readex Pro";
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  padding-bottom: 20px;
+  align-items: center;
+  text-align: center;
+  color: #202020;
 }
 .explore__box {
-  display: flex;
+  display: inline-block;
 }
 .explore__img {
-  max-width: 100%;
-  margin: 33px;
   border-radius: 10px;
 }
-.explore__img_1 {
+.explore__img_1, .explore__img_2, .explore__img_3 {
   max-width: 295px;
 }
 .explore__drini {
@@ -333,6 +338,60 @@ ul {
   color: #202020;
 }
 .explore__drini_text {
+  font-size: 16px;
+  line-height: 20px;
+  color: #959595;
+}
+.explore__baron {
+  position: relative;
+  max-width: 256px;
+  padding-bottom: 16px;
+  padding-left: 20px;
+}
+.explore__baron_logo, .explore__baron_text {
+  font-family: "Readex Pro";
+  margin: 16px 20px;
+  font-weight: 500;
+  align-items: center;
+  text-align: center;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+}
+.explore__baron_logo {
+  position: absolute;
+  bottom: 30px;
+  font-size: 24px;
+  line-height: 30px;
+  color: #202020;
+}
+.explore__baron_text {
+  font-size: 16px;
+  line-height: 20px;
+  color: #959595;
+}
+.explore__trisik {
+  position: relative;
+  max-width: 256px;
+  padding-bottom: 16px;
+  padding-left: 20px;
+}
+.explore__trisik_logo, .explore__trisik_text {
+  font-family: "Readex Pro";
+  margin: 16px 20px;
+  font-weight: 500;
+  align-items: center;
+  text-align: center;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+}
+.explore__trisik_logo {
+  position: absolute;
+  bottom: 30px;
+  font-size: 24px;
+  line-height: 30px;
+  color: #202020;
+}
+.explore__trisik_text {
   font-size: 16px;
   line-height: 20px;
   color: #959595;

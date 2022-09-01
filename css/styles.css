@@ -169,11 +169,11 @@ ul {
 .presentation {
   position: relative;
   margin: 0 auto;
+  padding: 100px 256px;
   max-width: 923px;
 }
 .presentation__box {
   display: flex;
-  padding-top: 100px;
 }
 .presentation__img {
   max-width: 100%;
@@ -198,6 +198,58 @@ ul {
   line-height: 22px;
   color: #959595;
   margin-bottom: 32px;
+}
+
+.discover {
+  margin: 0 auto;
+  max-width: 930px;
+  padding: 100px 256px;
+}
+.discover__box {
+  display: flex;
+}
+.discover__img {
+  max-width: 100%;
+}
+.discover__img_1 {
+  max-width: 274px;
+}
+.discover__title {
+  font-family: "Readex Pro";
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  align-items: center;
+  text-align: center;
+  color: #202020;
+}
+.discover__pakis {
+  position: relative;
+  max-width: 170px;
+  padding-bottom: 30px;
+  padding-left: 24px;
+}
+.discover__pakis_logo {
+  position: absolute;
+  bottom: 70px;
+  font-family: "Readex Pro";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+.discover__pakis_text {
+  font-family: "Readex Pro";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+.discover__suluban {
+  position: relative;
+  max-width: 316px;
+  padding-bottom: 30px;
+  padding-left: 24px;
 }
 
 /*# sourceMappingURL=styles.css.map */

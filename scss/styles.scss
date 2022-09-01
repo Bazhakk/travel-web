@@ -105,11 +105,11 @@
 .presentation {
   position: relative;
   margin: 0 auto;
+  padding: 100px 256px;
   max-width: 923px;
 
 &__box {
   display: flex;
-  padding-top: 100px;
 }
 
 &__img {
@@ -141,6 +141,66 @@
   color: $gr-color;
   margin-bottom: 32px;
 }
+}
 
+//DISCOVER
 
+.discover {
+  margin: 0 auto;
+  max-width: 930px;
+  padding: 100px 256px;
+
+   &__box {
+    display: flex;
+  }
+
+  &__img {
+    max-width: 100%;
+
+    &_1 {
+      max-width: 274px;
+    }
+  }
+
+  &__title {
+    font-family: 'Readex Pro';
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    align-items: center;
+    text-align: center;
+    color: $black-color;
+  }
+
+  &__pakis {
+    position: relative;
+    max-width: 170px;
+    padding-bottom: 30px;
+    padding-left: 24px;
+
+    &_logo {
+      position: absolute;
+      bottom: 70px;
+      font-family: 'Readex Pro';
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 30px;
+      color: $wite-color;
+    }
+
+    &_text {
+      font-family: 'Readex Pro';
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: $wite-color;
+    }
+  }
+
+  &__suluban {
+    position: relative;
+    max-width: 316px;
+    padding-bottom: 30px;
+    padding-left: 24px;
+  }
 }

@@ -210,6 +210,7 @@ ul {
 }
 .discover__img {
   max-width: 100%;
+  margin: 32px;
 }
 .discover__img_1 {
   max-width: 274px;

@@ -127,7 +127,7 @@ ul {
 .hero {
   font-size: 32px;
   font-weight: 400;
-  background-image: url("../img/header-bg.jpg");
+  background-image: url("../img/bg-img.jpg");
   background-repeat: no-repeat;
   padding: 320px 0 420px;
   background-position: center 300px;
@@ -203,13 +203,11 @@ ul {
 .discover {
   margin: 0 auto;
   max-width: 930px;
-  padding: 100px 256px;
 }
 .discover__box {
   display: flex;
 }
 .discover__img {
-  max-width: 100%;
   margin: 32px;
 }
 .discover__img_1 {
@@ -294,6 +292,50 @@ ul {
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
+}
+
+.explore {
+  max-width: 950px;
+  margin: 0 auto;
+  padding-left: 245px;
+}
+.explore__box {
+  display: flex;
+}
+.explore__img {
+  max-width: 100%;
+  margin: 33px;
+  border-radius: 10px;
+}
+.explore__img_1 {
+  max-width: 295px;
+}
+.explore__drini {
+  position: relative;
+  max-width: 256px;
+  padding-bottom: 16px;
+  padding-left: 20px;
+}
+.explore__drini_logo, .explore__drini_text {
+  font-family: "Readex Pro";
+  margin: 16px 20px;
+  font-weight: 500;
+  align-items: center;
+  text-align: center;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+}
+.explore__drini_logo {
+  position: absolute;
+  bottom: 30px;
+  font-size: 24px;
+  line-height: 30px;
+  color: #202020;
+}
+.explore__drini_text {
+  font-size: 16px;
+  line-height: 20px;
+  color: #959595;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -68,7 +68,7 @@
   &__text,
   &__title {
     font-family: 'Readex Pro';
-    margin: o auto;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     text-align: center;
@@ -80,13 +80,14 @@
     font-weight: 600;
     font-size: 24px;
     line-height: 30px;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
   }
 
   &__title {
     font-weight: 400;
     font-size: 48px;
     line-height: 60px;
+    margin-bottom: 32px;
   }
 
     &__icon {

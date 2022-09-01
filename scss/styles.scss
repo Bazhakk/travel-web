@@ -1,26 +1,20 @@
 @import "variables";
 @import "fonts";
 
-.box {
-  font-size: 32px;
-  font-weight: 400;
-  background-image: url("../img/header-bg.jpg");
-  background-repeat: no-repeat;
-  padding: 320px 0 420px;
-  background-position: center 300px;
-}
 
 .header {
+  position: sticky;
+  top: 0;
+  background: transparent;
   padding: 32px 0;
   
-
   &__container {
     max-width: 1180px;
     display: flex;
   }
+
   &__left {
     display: flex;
-    //margin-left: auto;
   }
 }
 
@@ -40,7 +34,7 @@
 
 .main-menu {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   font-size: 18px;
   line-height: 22px;
   padding-right: 130px;
@@ -56,9 +50,12 @@
 //HERO
 
 .hero {
-  background-color: aquamarine;
-  margin: 0 auto;
-  padding: 290px 600px 480px;
+  font-size: 32px;
+  font-weight: 400;
+  background-image: url("../img/header-bg.jpg");
+  background-repeat: no-repeat;
+  padding: 320px 0 420px;
+  background-position: center 300px;
   
   &__text,
   &__title {
@@ -69,6 +66,7 @@
     text-align: center;
     color: $wite-color;
   }
+
   &__text {
     //padding: 290px 600px;
     font-weight: 600;
@@ -85,7 +83,6 @@
   &__explore {
     max-width: 90px;
     max-height: 38px;
-    
     padding: 10px 18px;
     gap: 10px;
     border-radius: 8px;
@@ -110,4 +107,48 @@
       color: $wite-color;
     }
   }
+}
+
+
+//PRESENTATION
+
+.presentation {
+  position: relative;
+  margin: 0 auto;
+  max-width: 923px;
+
+&__box {
+  display: flex;
+  padding-top: 100px;
+}
+
+&__img {
+  max-width: 100%;
+}
+
+&__about {
+  margin: 50px;
+}
+
+&__title,
+&__text {
+  font-family: 'Readex Pro';
+  align-items: center;
+}
+
+&__title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  color: $black-color;
+}
+
+&__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: $gr-color;
+}
+
+
 }

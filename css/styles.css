@@ -22,16 +22,10 @@
   font-weight: 400;
   font-style: normal;
 }
-.box {
-  font-size: 32px;
-  font-weight: 400;
-  background-image: url("../img/header-bg.jpg");
-  background-repeat: no-repeat;
-  padding: 320px 0 420px;
-  background-position: center 300px;
-}
-
 .header {
+  position: sticky;
+  top: 0;
+  background: transparent;
   padding: 32px 0;
 }
 .header__container {
@@ -57,7 +51,7 @@
 
 .main-menu {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   font-size: 18px;
   line-height: 22px;
   padding-right: 130px;
@@ -70,9 +64,12 @@
 }
 
 .hero {
-  background-color: aquamarine;
-  margin: 0 auto;
-  padding: 290px 600px 480px;
+  font-size: 32px;
+  font-weight: 400;
+  background-image: url("../img/header-bg.jpg");
+  background-repeat: no-repeat;
+  padding: 320px 0 420px;
+  background-position: center 300px;
 }
 .hero__text, .hero__title {
   font-family: "Readex Pro";
@@ -148,23 +145,5 @@
   line-height: 22px;
   color: #959595;
 }
-<<<<<<< HEAD
-.presentacion__img {
-  position: absolute;
-}
-.presentacion__img_1, .presentacion__img_2 {
-  max-width: 200px;
-  border-radius: 10px;
-}
-.presentacion__img_1 {
-  top: 934px;
-  left: 240px;
-}
-.presentacion__img_2 {
-  top: 900px;
-  left: 470px;
-}
-=======
->>>>>>> presentation
 
 /*# sourceMappingURL=styles.css.map */

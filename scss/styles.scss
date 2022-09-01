@@ -429,11 +429,12 @@
 //FOOTER
 
 .footer {
+  max-width: 1440px;
+  max-height: 84px;
+  background: $green-color;
 
   &__block {
-    max-width: 1440px;
-    max-height: 84px;
-    background: $green-color;
+    margin: 32px;
   }
 
   &__text {

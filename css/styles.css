@@ -426,10 +426,13 @@ ul {
   color: #FFFFFF;
 }
 
-.footer__block {
+.footer {
   max-width: 1440px;
   max-height: 84px;
   background: #2B6F3E;
+}
+.footer__block {
+  margin: 32px;
 }
 .footer__text {
   font-family: "Readex Pro";

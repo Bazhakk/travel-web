@@ -148,6 +148,10 @@
 .discover {
   max-width: 930px;
   padding-left: 256px;
+<<<<<<< HEAD
+=======
+
+>>>>>>> explore
 
    &__box {
     display: flex;
@@ -257,15 +261,18 @@
 
 .explore {
   max-width: 950px;
+<<<<<<< HEAD
   //padding: 100px 245px;
   padding-left: 245px;
+=======
+  padding: 100px 245px 0;
+>>>>>>> explore
 
   &__title {
     font-family: 'Readex Pro';
     font-weight: 500;
     font-size: 32px;
     line-height: 40px;
-    padding-bottom: 20px;
     align-items: center;
     text-align: center;
     color: $black-color;

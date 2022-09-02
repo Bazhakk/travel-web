@@ -52,6 +52,7 @@ ul {
   line-height: 18px;
   align-items: center;
   border-radius: 8px;
+  padding: 10px 18px;
 }
 .button_dark {
   padding: 10px 18px;
@@ -293,14 +294,17 @@ ul {
 
 .explore {
   max-width: 950px;
+<<<<<<< HEAD
   padding-left: 245px;
+=======
+  padding: 100px 245px 0;
+>>>>>>> explore
 }
 .explore__title {
   font-family: "Readex Pro";
   font-weight: 500;
   font-size: 32px;
   line-height: 40px;
-  padding-bottom: 20px;
   align-items: center;
   text-align: center;
   color: #202020;

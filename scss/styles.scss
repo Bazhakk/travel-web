@@ -90,13 +90,11 @@
     margin-bottom: 32px;
   }
 
-    &__icon {
-      justify-content: center;
-      //max-width: 160px;
-      max-width: 32px;
-      max-height: 32px;
-      color: $wite-color;
-    }
+  &__img {
+    max-width: 160px;
+    margin: 0 auto;
+    margin-top: 32px;
+  }
 }
 
 
@@ -104,9 +102,9 @@
 
 .presentation {
   position: relative;
-  margin: 0 auto;
-  padding: 100px 256px;
   max-width: 923px;
+  margin: 0 auto;
+  padding-bottom: 100px;
 
   &__box {
     display: flex;

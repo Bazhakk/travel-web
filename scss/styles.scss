@@ -142,8 +142,7 @@
   max-width: 930px;
   padding-left: 256px;
 
-
-   &__box {
+  &__box {
     display: flex;
   }
 
@@ -218,7 +217,6 @@
       line-height: 20px;
       color: $wite-color;
     }
-
   }
 
   &__karimun {
@@ -295,13 +293,13 @@
       border-radius: 10px;
     }
     
-    &_logo {
-      position: absolute;
-      bottom: 30px;
-      font-size: 24px;
-      line-height: 30px;
-      color: $black-color;
-    }
+  &_logo {
+    position: absolute;
+    bottom: 30px;
+    font-size: 24px;
+    line-height: 30px;
+    color: $black-color;
+  }
 
     &_text {
       font-size: 16px;
@@ -310,11 +308,11 @@
     }
   }
 
-    &__baron {
-      position: relative;
-      max-width: 256px;
-      padding-bottom: 16px;
-      padding-left: 20px;
+  &__baron {
+    position: relative;
+    max-width: 256px;
+    padding-bottom: 16px;
+    padding-left: 20px;
 
       &_logo,
       &_text {
@@ -390,7 +388,6 @@
   }
 
   &__title {
-    //padding: 85px 300px;
     padding-top: 85px;
     font-family: 'Readex Pro';
     font-weight: 600;
@@ -410,13 +407,7 @@
     text-align: center;
     color: $wite-color;
   }
-
-  // &__button {
-  //   padding: 24px 517px;
-  // }
-
 }
-
 
 //FOOTER
 

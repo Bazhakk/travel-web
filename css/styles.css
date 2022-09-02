@@ -200,9 +200,8 @@ ul {
 }
 
 .discover {
-  margin: 0 auto;
   max-width: 930px;
-  padding: 100px 256px;
+  padding-left: 256px;
 }
 .discover__box {
   display: flex;
@@ -294,6 +293,7 @@ ul {
 
 .explore {
   max-width: 950px;
+  padding-left: 245px;
 }
 .explore__title {
   font-family: "Readex Pro";
@@ -306,9 +306,10 @@ ul {
   color: #202020;
 }
 .explore__box {
-  display: inline-block;
+  display: flex;
 }
 .explore__img {
+  margin: 16px;
   border-radius: 10px;
 }
 .explore__img_1, .explore__img_2, .explore__img_3 {
@@ -421,6 +422,24 @@ ul {
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.footer {
+  max-width: 1440px;
+  max-height: 84px;
+  background: #2B6F3E;
+}
+.footer__block {
+  margin: 32px;
+}
+.footer__text {
+  font-family: "Readex Pro";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
   align-items: center;
   text-align: center;
   color: #FFFFFF;

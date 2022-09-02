@@ -146,9 +146,9 @@
 //DISCOVER
 
 .discover {
-  margin: 0 auto;
   max-width: 930px;
-  padding: 100px 256px;
+  padding-left: 256px;
+
 
    &__box {
     display: flex;
@@ -258,25 +258,24 @@
 
 .explore {
   max-width: 950px;
-  //padding: 100px 245px;
+  padding: 100px 245px 0;
 
   &__title {
     font-family: 'Readex Pro';
     font-weight: 500;
     font-size: 32px;
     line-height: 40px;
-    padding-bottom: 20px;
     align-items: center;
     text-align: center;
     color: $black-color;
   }
 
   &__box {
-    display: inline-block;
+    display: flex;
   }
 
   &__img {
-    //margin: 16px;
+    margin: 16px;
     border-radius: 10px;
 
     &_1,

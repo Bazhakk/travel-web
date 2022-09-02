@@ -201,9 +201,8 @@ ul {
 }
 
 .discover {
-  margin: 0 auto;
   max-width: 930px;
-  padding: 100px 256px;
+  padding-left: 256px;
 }
 .discover__box {
   display: flex;
@@ -295,21 +294,22 @@ ul {
 
 .explore {
   max-width: 950px;
+  padding: 100px 245px 0;
 }
 .explore__title {
   font-family: "Readex Pro";
   font-weight: 500;
   font-size: 32px;
   line-height: 40px;
-  padding-bottom: 20px;
   align-items: center;
   text-align: center;
   color: #202020;
 }
 .explore__box {
-  display: inline-block;
+  display: flex;
 }
 .explore__img {
+  margin: 16px;
   border-radius: 10px;
 }
 .explore__img_1, .explore__img_2, .explore__img_3 {

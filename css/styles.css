@@ -125,17 +125,12 @@ ul {
 }
 
 .hero {
-  font-size: 32px;
-  font-weight: 400;
   background-image: url("../img/bg-img.jpg");
   background-repeat: no-repeat;
   padding: 320px 0 420px;
   background-position: center 300px;
 }
 .hero__container {
-  display: block;
-  justify-content: space-between;
-  align-items: center;
   padding: 250px 320px 25px;
 }
 .hero__text, .hero__title {

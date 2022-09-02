@@ -8,9 +8,9 @@
   top: 0;
   background: transparent;
   padding: 32px 0;
+  background-color: aqua;
   
   &__container {
-    max-width: 1180px;
     display: flex;
   }
 
@@ -22,7 +22,6 @@
 .logo {
   max-height: 32px;
   margin-left: auto;
-  padding-left: 130px;
   
   svg {
    max-height: 32px;
@@ -34,18 +33,19 @@
 }
 
 .main-menu {
+  //overflow: hidden;
+  position: fixed;
   display: flex;
-  align-items: flex-end;
+  width: 100%;
+  justify-content: flex-end;
   font-size: 18px;
   line-height: 22px;
-  padding-right: 130px;
-
-  &__link {
-    padding: 0 32px;
-    margin-left: 24px;
-    color: $wite-color;
-    text-decoration: none;
-  }
+  
+&__link {
+  float: left;
+  margin: 32px;
+  color: $wite-color; 
+}
 }
 
 //HERO

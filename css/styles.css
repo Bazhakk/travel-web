@@ -42,7 +42,6 @@ ul {
 .container {
   max-width: 1180px;
   margin: 0 auto;
-  padding: 0 10px;
 }
 
 .button {
@@ -88,9 +87,9 @@ ul {
   top: 0;
   background: transparent;
   padding: 32px 0;
+  background-color: aqua;
 }
 .header__container {
-  max-width: 1180px;
   display: flex;
 }
 .header__left {
@@ -100,7 +99,6 @@ ul {
 .logo {
   max-height: 32px;
   margin-left: auto;
-  padding-left: 130px;
 }
 .logo svg {
   max-height: 32px;
@@ -111,17 +109,17 @@ ul {
 }
 
 .main-menu {
+  position: fixed;
   display: flex;
-  align-items: flex-end;
+  width: 100%;
+  justify-content: flex-end;
   font-size: 18px;
   line-height: 22px;
-  padding-right: 130px;
 }
 .main-menu__link {
-  padding: 0 32px;
-  margin-left: 24px;
+  float: left;
+  margin: 32px;
   color: #FFFFFF;
-  text-decoration: none;
 }
 
 .hero {

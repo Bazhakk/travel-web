@@ -294,14 +294,13 @@ ul {
 
 .explore {
   max-width: 950px;
-  padding-left: 245px;
+  padding: 100px 245px 0;
 }
 .explore__title {
   font-family: "Readex Pro";
   font-weight: 500;
   font-size: 32px;
   line-height: 40px;
-  padding-bottom: 20px;
   align-items: center;
   text-align: center;
   color: #202020;

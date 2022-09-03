@@ -16,15 +16,11 @@
   font-weight: 600;
   font-style: normal;
 }
-@font-face {
-  font-family: "pacifico";
-  src: url("../fonts/Pacifico-Regular.eot") format("embedded-opentype"), url("../fonts/Pacifico-Regular.svg") format("svg"), url("../fonts/Pacifico-Regular.woff") format("woff"), url("../fonts/Pacifico-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
 body {
   margin: 0;
   font-family: "readex";
+  font-size: 32px;
+  font-weight: 400;
 }
 
 main,
@@ -134,13 +130,16 @@ ul {
   margin-bottom: 16px;
 }
 .hero__title {
-  font-weight: 400;
   font-size: 48px;
   line-height: 60px;
   margin-bottom: 32px;
 }
 
 .social {
+  margin-top: 32px;
+}
+.social__item {
+  margin: 16px;
   margin-top: 32px;
 }
 .social__twitter:hover svg path {
@@ -172,7 +171,6 @@ ul {
   margin: 50px;
 }
 .presentation__title, .presentation__text {
-  font-family: "Readex Pro";
   align-items: center;
 }
 .presentation__title {
@@ -183,11 +181,9 @@ ul {
   margin-bottom: 24px;
 }
 .presentation__text {
-  font-weight: 400;
   font-size: 18px;
   line-height: 22px;
   color: #959595;
-  margin-bottom: 32px;
 }
 
 .discover {

@@ -66,7 +66,6 @@
   }
 
   &__title {
-    font-weight: 400;
     font-size: 48px;
     line-height: 60px;
     margin-bottom: 32px;
@@ -77,7 +76,8 @@
   margin-top: 32px;
 
   &__item {
-    
+    margin: 16px;
+    margin-top: 32px;
   }
 
   &__twitter {
@@ -115,18 +115,6 @@
       }
     }
   }
-
-  // &__instagram {
-  //   &:hover {
-      
-  //     svg {
-  //       path {
-  //         transition: .4s all;
-  //         fill: #F8F;
-  //       }
-  //     }
-  //   }
-  // }
 }
 
 //PRESENTATION
@@ -151,7 +139,6 @@
 
   &__title,
   &__text {
-    font-family: 'Readex Pro';
     align-items: center;
   }
 
@@ -164,11 +151,9 @@
   }
 
   &__text {
-    font-weight: 400;
     font-size: 18px;
     line-height: 22px;
     color: $gr-color;
-    margin-bottom: 32px;
   }
   }
 

@@ -90,6 +90,10 @@ ul {
 .logo svg {
   max-height: 56px;
 }
+.logo svg:hover {
+  transition: all 0.4s;
+  width: 150px;
+}
 
 .mobile-menu {
   display: none;
@@ -104,6 +108,11 @@ ul {
   margin-left: 85px;
   color: #FFFFFF;
 }
+.main-menu__link:hover {
+  transition: all 0.4s;
+  font-size: 22px;
+  text-decoration: underline;
+}
 
 .hero {
   height: 100vh;
@@ -116,8 +125,6 @@ ul {
   text-align: center;
 }
 .hero__text, .hero__title {
-  font-family: "readex";
-  margin: 0 auto;
   color: #FFFFFF;
 }
 .hero__text {
@@ -155,8 +162,8 @@ ul {
 .presentation {
   position: relative;
   max-width: 923px;
-  margin: 0 auto;
-  padding-bottom: 100px;
+  padding: 0 258px;
+  margin-top: 100px;
 }
 .presentation__box {
   display: flex;
@@ -186,6 +193,7 @@ ul {
 .discover {
   max-width: 930px;
   padding-left: 256px;
+  margin-top: 100px;
 }
 .discover__box {
   display: flex;
@@ -276,7 +284,7 @@ ul {
 }
 
 .explore {
-  max-width: 950px;
+  margin: 0 auto;
   padding: 100px 245px 0;
 }
 .explore__title {
@@ -381,32 +389,25 @@ ul {
 }
 
 .conclusion {
-  margin: 0 auto;
-  padding: 184px 130px;
+  padding: 100px 130px;
 }
 .conclusion__block {
-  max-width: 1180px;
-  max-height: 334px;
+  padding-bottom: 77px;
+  text-align: center;
   border-radius: 16px;
   background: #2B6F3E;
 }
 .conclusion__title {
   padding-top: 85px;
-  font-family: "Readex Pro";
   font-weight: 600;
   font-size: 32px;
   line-height: 40px;
-  align-items: center;
-  text-align: center;
   color: #FFFFFF;
 }
 .conclusion__text {
-  font-family: "Readex Pro";
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
-  align-items: center;
-  text-align: center;
   color: #FFFFFF;
 }
 

@@ -143,9 +143,17 @@ ul {
 .social {
   margin-top: 32px;
 }
+.social__twitter:hover svg path {
+  transition: 0.4s all;
+  fill: blue;
+}
 .social__facebook:hover svg path {
   transition: 0.4s all;
   fill: blue;
+}
+.social__instagram:hover svg path {
+  transition: 0.4s all;
+  fill: red;
 }
 
 .presentation {

@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: "readex";
 }
 
 main,
@@ -25,12 +26,10 @@ ul {
   font-weight: 600;
   font-size: 14px;
   line-height: 18px;
-  align-items: center;
   border-radius: 8px;
   padding: 10px 18px;
 }
 .button_dark {
-  padding: 10px 18px;
   background-color: #2B6F3E;
   color: #FFFFFF;
 }

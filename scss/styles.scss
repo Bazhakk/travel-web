@@ -4,27 +4,23 @@
 
 
 .header {
-  position: sticky;
+  width: 100%;
+  margin-top: 32px;
+  position: absolute;
   top: 0;
   background: transparent;
-  padding: 32px 0;
-  background-color: aqua;
   
   &__container {
     display: flex;
-  }
-
-  &__left {
-    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 
 .logo {
-  max-height: 32px;
-  margin-left: auto;
   
   svg {
-   max-height: 32px;
+   max-height: 56px;
   }
 }
 
@@ -33,45 +29,36 @@
 }
 
 .main-menu {
-  //overflow: hidden;
-  position: fixed;
   display: flex;
-  width: 100%;
-  justify-content: flex-end;
   font-size: 18px;
   line-height: 22px;
   
-&__link {
-  float: left;
-  margin: 32px;
-  color: $wite-color; 
-}
+  &__link {
+    margin-left: 85px;
+    color: $wite-color;
+  }
 }
 
 //HERO
-
 .hero {
+  height: 100vh;
   background-image: url("../img/bg-img.jpg");
   background-repeat: no-repeat;
-  padding: 320px 0 420px;
-  background-position: center 300px;
+  background-size: cover;
   
   &__container {
-    padding: 250px 320px 25px;
+    padding-top: 15%;
+    text-align: center;
   }
 
   &__text,
   &__title {
-    font-family: 'Readex Pro';
+    font-family: 'readex';
     margin: 0 auto;
-    display: flex;
-    align-items: center;
-    text-align: center;
     color: $wite-color;
   }
 
   &__text {
-    justify-content: center;
     font-weight: 600;
     font-size: 24px;
     line-height: 30px;
@@ -84,14 +71,37 @@
     line-height: 60px;
     margin-bottom: 32px;
   }
-
-  &__img {
-    max-width: 160px;
-    margin: 0 auto;
-    margin-top: 32px;
-  }
 }
 
+.social {
+  margin-top: 32px;
+
+  &__item {
+    
+  }
+
+  &__twitter {
+
+    &:hover {
+      
+      img {
+
+      }
+    }
+  }
+
+  &__facebook {
+    &:hover {
+      
+      svg {
+        path {
+          transition: .4s all;
+          fill: blue;
+        }
+      }
+    }
+  }
+}
 
 //PRESENTATION
 

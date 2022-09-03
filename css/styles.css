@@ -2,19 +2,16 @@
   font-family: "readex";
   src: url("../fonts/ReadexPro-Regular.eot") format("embedded-opentype"), url("../fonts/ReadexPro-Regular.svg") format("svg"), url("../fonts/ReadexPro-Regular.woff") format("woff"), url("../fonts/ReadexPro-Regular.woff2") format("woff2"), url("../fonts/ReadexPro-Regular.ttf") format("truetype");
   font-weight: 400;
-  font-style: normal;
 }
 @font-face {
   font-family: "readex";
   src: url("../fonts/ReadexPro-Medium.eot") format("embedded-opentype"), url("../fonts/ReadexPro-Medium.svg") format("svg"), url("../fonts/ReadexPro-Medium.woff") format("woff"), url("../fonts/ReadexPro-Medium.woff2") format("woff2"), url("../fonts/ReadexPro-Medium.ttf") format("truetype");
   font-weight: 500;
-  font-style: normal;
 }
 @font-face {
   font-family: "readex";
   src: url("../fonts/ReadexPro-SemiBold.eot") format("embedded-opentype"), url("../fonts/ReadexPro-SemiBold.svg") format("svg"), url("../fonts/ReadexPro-SemiBold.woff") format("woff"), url("../fonts/ReadexPro-SemiBold.woff2") format("woff2"), url("../fonts/ReadexPro-SemiBold.ttf") format("truetype");
   font-weight: 600;
-  font-style: normal;
 }
 body {
   margin: 0;
@@ -414,16 +411,13 @@ ul {
 }
 
 .footer {
-  max-width: 1440px;
-  max-height: 84px;
+  margin-top: 108px;
   background: #2B6F3E;
 }
-.footer__block {
-  margin: 32px;
+.footer__container {
+  padding: 32px 0;
 }
 .footer__text {
-  font-family: "Readex Pro";
-  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   align-items: center;

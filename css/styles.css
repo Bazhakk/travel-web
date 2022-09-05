@@ -485,11 +485,18 @@ ul {
 @media screen and (max-width: 1024px) {
   .explore__box {
     flex-direction: column;
+    margin: 0 auto;
   }
 }
 .explore__img {
   margin: 16px;
   border-radius: 10px;
+}
+@media screen and (max-width: 1024px) {
+  .explore__img {
+    margin: 8px;
+    border-radius: 5px;
+  }
 }
 .explore__img_1, .explore__img_2, .explore__img_3 {
   max-width: 295px;

@@ -444,12 +444,18 @@
 
     @media screen and (max-width: 1024px) {
       flex-direction: column;
+      margin: 0 auto;
     }
   }
 
   &__img {
     margin: 16px;
     border-radius: 10px;
+
+    @media screen and (max-width: 1024px) {
+      margin: 8px;
+      border-radius: 5px;
+    }
 
     &_1,
     &_2,

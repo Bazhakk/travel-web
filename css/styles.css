@@ -206,7 +206,7 @@ ul {
 .presentation {
   position: relative;
   max-width: 923px;
-  padding: 0 258px;
+  padding-left: 258px;
   margin-top: 100px;
 }
 @media screen and (max-width: 1024px) {
@@ -457,7 +457,8 @@ ul {
 
 .explore {
   max-width: 950px;
-  margin: 0 auto;
+  padding-left: 245px;
+  margin-top: 100px;
 }
 @media screen and (max-width: 1024px) {
   .explore {

@@ -46,6 +46,14 @@ ul {
   border-radius: 8px;
   padding: 10px 18px;
 }
+@media screen and (max-width: 1024px) {
+  .button {
+    font-size: 7px;
+    line-height: 9px;
+    border-radius: 4px;
+    padding: 5px 9px;
+  }
+}
 .button_dark {
   background-color: #2B6F3E;
   color: #FFFFFF;
@@ -120,9 +128,20 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media screen and (max-width: 1024px) {
+  .hero {
+    height: 60vh;
+  }
+}
 .hero__container {
   padding-top: 15%;
   text-align: center;
+}
+@media screen and (max-width: 1024px) {
+  .hero__container {
+    padding-top: 25%;
+    flex-direction: column;
+  }
 }
 .hero__text, .hero__title {
   color: #FFFFFF;
@@ -133,18 +152,43 @@ ul {
   line-height: 30px;
   margin-bottom: 16px;
 }
+@media screen and (max-width: 1024px) {
+  .hero__text {
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 8px;
+  }
+}
 .hero__title {
   font-size: 48px;
   line-height: 60px;
   margin-bottom: 32px;
 }
+@media screen and (max-width: 1024px) {
+  .hero__title {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 16px;
+  }
+}
 
 .social {
   margin-top: 32px;
 }
+@media screen and (max-width: 1024px) {
+  .social {
+    margin-top: 16px;
+  }
+}
 .social__item {
   margin: 16px;
   margin-top: 32px;
+}
+@media screen and (max-width: 1024px) {
+  .social__item {
+    margin: 8px;
+    margin-top: 16px;
+  }
 }
 .social__twitter:hover svg path {
   transition: 0.4s all;
@@ -165,14 +209,36 @@ ul {
   padding: 0 258px;
   margin-top: 100px;
 }
+@media screen and (max-width: 1024px) {
+  .presentation {
+    min-width: 310px;
+    padding: 0 130px;
+    margin-top: 50px;
+  }
+}
 .presentation__box {
   display: flex;
+}
+@media screen and (max-width: 1024px) {
+  .presentation__box {
+    flex-direction: column;
+  }
 }
 .presentation__img {
   max-width: 100%;
 }
+@media screen and (max-width: 1024px) {
+  .presentation__img {
+    min-width: 15%;
+  }
+}
 .presentation__about {
   margin: 50px;
+}
+@media screen and (max-width: 1024px) {
+  .presentation__about {
+    margin: 25px;
+  }
 }
 .presentation__title, .presentation__text {
   align-items: center;
@@ -181,13 +247,26 @@ ul {
   font-weight: 500;
   font-size: 32px;
   line-height: 40px;
-  color: #202020;
   margin-bottom: 24px;
+  color: #202020;
+}
+@media screen and (max-width: 1024px) {
+  .presentation__title {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 12px;
+  }
 }
 .presentation__text {
   font-size: 18px;
   line-height: 22px;
   color: #959595;
+}
+@media screen and (max-width: 1024px) {
+  .presentation__text {
+    font-size: 9px;
+    line-height: 11px;
+  }
 }
 
 .discover {
@@ -195,17 +274,44 @@ ul {
   padding-left: 256px;
   margin-top: 100px;
 }
+@media screen and (max-width: 1024px) {
+  .discover {
+    max-width: 315px;
+    padding-left: 130px;
+    margin-top: 50px;
+  }
+}
 .discover__box {
   display: flex;
+}
+@media screen and (max-width: 1024px) {
+  .discover__box {
+    flex-direction: column;
+  }
 }
 .discover__img {
   margin: 16px;
 }
+@media screen and (max-width: 1024px) {
+  .discover__img {
+    margin: 8px;
+  }
+}
 .discover__img_1, .discover__img_3 {
   max-width: 274px;
 }
+@media screen and (max-width: 1024px) {
+  .discover__img_1, .discover__img_3 {
+    max-width: 140px;
+  }
+}
 .discover__img_2 {
   max-width: 316px;
+}
+@media screen and (max-width: 1024px) {
+  .discover__img_2 {
+    max-width: 153px;
+  }
 }
 .discover__title {
   font-family: "Readex Pro";
@@ -216,20 +322,40 @@ ul {
   text-align: center;
   color: #202020;
 }
+@media screen and (max-width: 1024px) {
+  .discover__title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
 .discover__pakis {
   position: relative;
   max-width: 170px;
   padding-bottom: 30px;
   padding-left: 24px;
 }
+@media screen and (max-width: 1024px) {
+  .discover__pakis {
+    max-width: 85px;
+    padding-bottom: 15px;
+    padding-left: 12px;
+  }
+}
 .discover__pakis_logo {
   position: absolute;
-  bottom: 30px;
   font-family: "Readex Pro";
   font-weight: 600;
+  bottom: 30px;
   font-size: 24px;
   line-height: 30px;
   color: #FFFFFF;
+}
+@media screen and (max-width: 1024px) {
+  .discover__pakis_logo {
+    bottom: 15px;
+    font-size: 12px;
+    line-height: 15px;
+  }
 }
 .discover__pakis_text {
   font-family: "Readex Pro";
@@ -238,20 +364,40 @@ ul {
   line-height: 20px;
   color: #FFFFFF;
 }
+@media screen and (max-width: 1024px) {
+  .discover__pakis_text {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
 .discover__suluban {
   position: relative;
   max-width: 176px;
   padding-bottom: 30px;
   padding-left: 24px;
 }
+@media screen and (max-width: 1024px) {
+  .discover__suluban {
+    max-width: 88px;
+    padding-bottom: 15px;
+    padding-left: 12px;
+  }
+}
 .discover__suluban_logo {
   position: absolute;
   font-family: "Readex Pro";
-  bottom: 30px;
   font-weight: 600;
+  bottom: 30px;
   font-size: 24px;
   line-height: 30px;
   color: #FFFFFF;
+}
+@media screen and (max-width: 1024px) {
+  .discover__suluban_logo {
+    bottom: 15px;
+    font-size: 12px;
+    line-height: 15px;
+  }
 }
 .discover__suluban_text {
   font-family: "Readex Pro";
@@ -260,20 +406,40 @@ ul {
   line-height: 20px;
   color: #FFFFFF;
 }
+@media screen and (max-width: 1024px) {
+  .discover__suluban_text {
+    font-size: 8px;
+    line-height: 10px;
+  }
+}
 .discover__karimun {
   position: relative;
   max-width: 195px;
   padding-bottom: 30px;
   padding-left: 24px;
 }
+@media screen and (max-width: 1024px) {
+  .discover__karimun {
+    max-width: 95px;
+    padding-bottom: 15px;
+    padding-left: 12px;
+  }
+}
 .discover__karimun_logo {
   position: absolute;
-  bottom: 30px;
   font-family: "Readex Pro";
   font-weight: 600;
+  bottom: 30px;
   font-size: 24px;
   line-height: 30px;
   color: #FFFFFF;
+}
+@media screen and (max-width: 1024px) {
+  .discover__karimun_logo {
+    bottom: 15px;
+    font-size: 12px;
+    line-height: 15px;
+  }
 }
 .discover__karimun_text {
   font-family: "Readex Pro";
@@ -282,10 +448,21 @@ ul {
   line-height: 20px;
   color: #FFFFFF;
 }
+@media screen and (max-width: 1024px) {
+  .discover__karimun_text {
+    font-size: 8px;
+    line-height: 10px;
+  }
+}
 
 .explore {
+  max-width: 950px;
   margin: 0 auto;
-  padding: 100px 245px 0;
+}
+@media screen and (max-width: 1024px) {
+  .explore {
+    max-width: 475px;
+  }
 }
 .explore__title {
   font-family: "Readex Pro";
@@ -296,8 +473,19 @@ ul {
   text-align: center;
   color: #202020;
 }
+@media screen and (max-width: 1024px) {
+  .explore__title {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
 .explore__box {
   display: flex;
+}
+@media screen and (max-width: 1024px) {
+  .explore__box {
+    flex-direction: column;
+  }
 }
 .explore__img {
   margin: 16px;
@@ -306,20 +494,38 @@ ul {
 .explore__img_1, .explore__img_2, .explore__img_3 {
   max-width: 295px;
 }
+@media screen and (max-width: 1024px) {
+  .explore__img_1, .explore__img_2, .explore__img_3 {
+    max-width: 145px;
+  }
+}
 .explore__drini {
   position: relative;
   max-width: 256px;
   padding-bottom: 16px;
   padding-left: 20px;
 }
+@media screen and (max-width: 1024px) {
+  .explore__drini {
+    max-width: 130px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+  }
+}
 .explore__drini_logo, .explore__drini_text {
   font-family: "Readex Pro";
-  margin: 16px 20px;
   font-weight: 500;
+  margin: 16px 20px;
   align-items: center;
   text-align: center;
-  background-color: #FFFFFF;
   border-radius: 10px;
+  background-color: #FFFFFF;
+}
+@media screen and (max-width: 1024px) {
+  .explore__drini_logo, .explore__drini_text {
+    margin: 8px 10px;
+    border-radius: 5px;
+  }
 }
 .explore__drini_logo {
   position: absolute;
@@ -328,10 +534,23 @@ ul {
   line-height: 30px;
   color: #202020;
 }
+@media screen and (max-width: 1024px) {
+  .explore__drini_logo {
+    bottom: 15px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
 .explore__drini_text {
   font-size: 16px;
   line-height: 20px;
   color: #959595;
+}
+@media screen and (max-width: 1024px) {
+  .explore__drini_text {
+    font-size: 8px;
+    line-height: 10px;
+  }
 }
 .explore__baron {
   position: relative;
@@ -339,14 +558,27 @@ ul {
   padding-bottom: 16px;
   padding-left: 20px;
 }
+@media screen and (max-width: 1024px) {
+  .explore__baron {
+    max-width: 145px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+  }
+}
 .explore__baron_logo, .explore__baron_text {
   font-family: "Readex Pro";
-  margin: 16px 20px;
   font-weight: 500;
+  margin: 16px 20px;
   align-items: center;
   text-align: center;
-  background-color: #FFFFFF;
   border-radius: 10px;
+  background-color: #FFFFFF;
+}
+@media screen and (max-width: 1024px) {
+  .explore__baron_logo, .explore__baron_text {
+    margin: 8px 10px;
+    border-radius: 5px;
+  }
 }
 .explore__baron_logo {
   position: absolute;
@@ -355,10 +587,23 @@ ul {
   line-height: 30px;
   color: #202020;
 }
+@media screen and (max-width: 1024px) {
+  .explore__baron_logo {
+    bottom: 15px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
 .explore__baron_text {
   font-size: 16px;
   line-height: 20px;
   color: #959595;
+}
+@media screen and (max-width: 1024px) {
+  .explore__baron_text {
+    font-size: 8px;
+    line-height: 10px;
+  }
 }
 .explore__trisik {
   position: relative;
@@ -366,14 +611,27 @@ ul {
   padding-bottom: 16px;
   padding-left: 20px;
 }
+@media screen and (max-width: 1024px) {
+  .explore__trisik {
+    max-width: 145px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+  }
+}
 .explore__trisik_logo, .explore__trisik_text {
   font-family: "Readex Pro";
-  margin: 16px 20px;
   font-weight: 500;
+  margin: 16px 20px;
   align-items: center;
   text-align: center;
-  background-color: #FFFFFF;
   border-radius: 10px;
+  background-color: #FFFFFF;
+}
+@media screen and (max-width: 1024px) {
+  .explore__trisik_logo, .explore__trisik_text {
+    margin: 8px 10px;
+    border-radius: 5px;
+  }
 }
 .explore__trisik_logo {
   position: absolute;
@@ -382,27 +640,58 @@ ul {
   line-height: 30px;
   color: #202020;
 }
+@media screen and (max-width: 1024px) {
+  .explore__trisik_logo {
+    bottom: 15px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
 .explore__trisik_text {
   font-size: 16px;
   line-height: 20px;
   color: #959595;
 }
+@media screen and (max-width: 1024px) {
+  .explore__trisik_text {
+    font-size: 8px;
+    line-height: 10px;
+  }
+}
 
 .conclusion {
   padding: 100px 130px;
 }
+@media screen and (max-width: 1024px) {
+  .conclusion {
+    padding: 50px 65px;
+  }
+}
 .conclusion__block {
   padding-bottom: 77px;
-  text-align: center;
   border-radius: 16px;
+  text-align: center;
   background: #2B6F3E;
 }
+@media screen and (max-width: 1024px) {
+  .conclusion__block {
+    padding-bottom: 38px;
+    border-radius: 8px;
+  }
+}
 .conclusion__title {
-  padding-top: 85px;
   font-weight: 600;
+  padding-top: 85px;
   font-size: 32px;
   line-height: 40px;
   color: #FFFFFF;
+}
+@media screen and (max-width: 1024px) {
+  .conclusion__title {
+    padding-top: 40px;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 .conclusion__text {
   font-weight: 400;
@@ -410,13 +699,29 @@ ul {
   line-height: 22px;
   color: #FFFFFF;
 }
+@media screen and (max-width: 1024px) {
+  .conclusion__text {
+    font-size: 9px;
+    line-height: 11px;
+  }
+}
 
 .footer {
   margin-top: 108px;
   background: #2B6F3E;
 }
+@media screen and (max-width: 1024px) {
+  .footer {
+    margin-top: 54px;
+  }
+}
 .footer__container {
   padding: 32px 0;
+}
+@media screen and (max-width: 1024px) {
+  .footer__container {
+    padding: 16px 0;
+  }
 }
 .footer__text {
   font-size: 16px;
@@ -424,6 +729,12 @@ ul {
   align-items: center;
   text-align: center;
   color: #FFFFFF;
+}
+@media screen and (max-width: 1024px) {
+  .footer__text {
+    font-size: 8px;
+    line-height: 10px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

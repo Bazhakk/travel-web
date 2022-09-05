@@ -56,10 +56,19 @@
   background-image: url("../img/bg-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media screen and (max-width: 1024px) {
+    height: 60vh;
+  }
   
   &__container {
     padding-top: 15%;
     text-align: center;
+
+    @media screen and (max-width: 1024px) {
+      padding-top: 25%;
+      flex-direction: column;
+    }
   }
 
   &__text,
@@ -72,21 +81,42 @@
     font-size: 24px;
     line-height: 30px;
     margin-bottom: 16px;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 12px;
+      line-height: 15px;
+      margin-bottom: 8px;
+    }
   }
 
   &__title {
     font-size: 48px;
     line-height: 60px;
     margin-bottom: 32px;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 24px;
+      line-height: 30px;
+      margin-bottom: 16px;
+    }
   }
 }
 
 .social {
   margin-top: 32px;
 
+  @media screen and (max-width: 1024px) {
+    margin-top: 16px;
+  }
+
   &__item {
     margin: 16px;
     margin-top: 32px;
+
+    @media screen and (max-width: 1024px) {
+      margin: 8px;
+      margin-top: 16px;
+    }
   }
 
   &__twitter {
@@ -134,16 +164,34 @@
   padding: 0 258px;
   margin-top: 100px;
 
+  @media screen and (max-width: 1024px) {
+    min-width: 310px;
+    padding: 0 130px;
+    margin-top: 50px;
+  }
+
   &__box {
     display: flex;
+
+    @media screen and (max-width: 1024px) {
+      flex-direction: column;
+    }
 }
 
   &__img {
     max-width: 100%;
+
+    @media screen and (max-width: 1024px) {
+      min-width: 15%;
+    }
   }
 
   &__about {
     margin: 50px;
+
+    @media screen and (max-width: 1024px) {
+      margin: 25px;
+    }
   }
 
   &__title,
@@ -155,14 +203,25 @@
     font-weight: 500;
     font-size: 32px;
     line-height: 40px;
-    color: $black-color;
     margin-bottom: 24px;
+    color: $black-color;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 12px;
+    }
   }
 
   &__text {
     font-size: 18px;
     line-height: 22px;
     color: $gr-color;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 9px;
+      line-height: 11px;
+    }
   }
   }
 
@@ -173,20 +232,42 @@
   padding-left: 256px;
   margin-top: 100px;
 
+  @media screen and (max-width: 1024px) {
+    max-width: 315px;
+    padding-left: 130px;
+    margin-top: 50px;
+  }
+
   &__box {
     display: flex;
+
+    @media screen and (max-width: 1024px) {
+      flex-direction: column;
+    }
   }
 
   &__img {
     margin: 16px;
+    
+    @media screen and (max-width: 1024px) {
+      margin: 8px;
+    }
 
     &_1,
     &_3 {
       max-width: 274px;
+
+      @media screen and (max-width: 1024px) {
+        max-width: 140px;
+      }
     }
 
     &_2 {
       max-width: 316px;
+
+      @media screen and (max-width: 1024px) {
+        max-width: 153px;
+      }
     }
   }
 
@@ -198,6 +279,11 @@
     align-items: center;
     text-align: center;
     color: $black-color;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
 
   &__pakis {
@@ -206,14 +292,27 @@
     padding-bottom: 30px;
     padding-left: 24px;
 
+    @media screen and (max-width: 1024px) {
+      max-width: 85px;
+      padding-bottom: 15px;
+      padding-left: 12px;
+    }
+    
+
     &_logo {
       position: absolute;
-      bottom: 30px;
       font-family: 'Readex Pro';
       font-weight: 600;
+      bottom: 30px;
       font-size: 24px;
       line-height: 30px;
       color: $wite-color;
+
+      @media screen and (max-width: 1024px) {
+        bottom: 15px;
+        font-size: 12px;
+        line-height: 15px;
+      }
     }
 
     &_text {
@@ -222,6 +321,11 @@
       font-size: 16px;
       line-height: 20px;
       color: $wite-color;
+
+      @media screen and (max-width: 1024px) {
+        font-size: 18px;
+        line-height: 20px;
+      }
     }
   }
 
@@ -231,14 +335,26 @@
     padding-bottom: 30px;
     padding-left: 24px;
 
+    @media screen and (max-width: 1024px) {
+      max-width: 88px;
+      padding-bottom: 15px;
+      padding-left: 12px;
+    }
+
     &_logo {
       position: absolute;
       font-family: 'Readex Pro';
-      bottom: 30px;
       font-weight: 600;
+      bottom: 30px;
       font-size: 24px;
       line-height: 30px;
       color: $wite-color;
+
+      @media screen and (max-width: 1024px) {
+        bottom: 15px;
+        font-size: 12px;
+        line-height: 15px;
+      }
     }
 
     &_text {
@@ -247,6 +363,11 @@
       font-size: 16px;
       line-height: 20px;
       color: $wite-color;
+
+      @media screen and (max-width: 1024px) {
+        font-size: 8px;
+        line-height: 10px;
+      }
     }
   }
 
@@ -256,14 +377,26 @@
     padding-bottom: 30px;
     padding-left: 24px;
 
+    @media screen and (max-width: 1024px) {
+      max-width: 95px;
+      padding-bottom: 15px;
+      padding-left: 12px;
+    }
+
     &_logo {
       position: absolute;
-      bottom: 30px;
       font-family: 'Readex Pro';
       font-weight: 600;
+      bottom: 30px;
       font-size: 24px;
       line-height: 30px;
       color: $wite-color;
+
+      @media screen and (max-width: 1024px) {
+        bottom: 15px;
+        font-size: 12px;
+        line-height: 15px;
+      }
     }
 
     &_text {
@@ -272,6 +405,11 @@
       font-size: 16px;
       line-height: 20px;
       color: $wite-color;
+
+      @media screen and (max-width: 1024px) {
+        font-size: 8px;
+        line-height: 10px;
+      }
     }
   }
 }
@@ -279,9 +417,12 @@
 //EXPLORE
 
 .explore {
-  //max-width: 950px;
+  max-width: 950px;
   margin: 0 auto;
-  padding: 100px 245px 0;
+
+  @media screen and (max-width: 1024px) {
+    max-width: 475px;
+  }
 
   &__title {
     font-family: 'Readex Pro';
@@ -291,10 +432,19 @@
     align-items: center;
     text-align: center;
     color: $black-color;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 18px;
+      line-height: 20px;
+    }
   }
 
   &__box {
     display: flex;
+
+    @media screen and (max-width: 1024px) {
+      flex-direction: column;
+    }
   }
 
   &__img {
@@ -305,6 +455,10 @@
     &_2,
     &_3 {
       max-width: 295px;
+
+      @media screen and (max-width: 1024px) {
+        max-width: 145px;
+      }
     }
   }
 
@@ -313,16 +467,27 @@
     max-width: 256px;
     padding-bottom: 16px;
     padding-left: 20px;
+
+    @media screen and (max-width: 1024px) {
+      max-width: 130px;
+      padding-bottom: 8px;
+      padding-left: 10px;
+    }
     
     &_logo,
     &_text {
       font-family: 'Readex Pro';
-      margin: 16px 20px;
       font-weight: 500;
+      margin: 16px 20px;
       align-items: center;
       text-align: center;
-      background-color: $wite-color;
       border-radius: 10px;
+      background-color: $wite-color;
+
+      @media screen and (max-width: 1024px) {
+        margin: 8px 10px;
+        border-radius: 5px;
+      }
     }
     
   &_logo {
@@ -331,12 +496,23 @@
     font-size: 24px;
     line-height: 30px;
     color: $black-color;
+
+    @media screen and (max-width: 1024px) {
+      bottom: 15px;
+      font-size: 12px;
+      line-height: 15px;
+    }
   }
 
     &_text {
       font-size: 16px;
       line-height: 20px;
       color: $gr-color;
+
+      @media screen and (max-width: 1024px) {
+        font-size: 8px;
+        line-height: 10px;
+      }
     }
   }
 
@@ -346,15 +522,26 @@
     padding-bottom: 16px;
     padding-left: 20px;
 
+    @media screen and (max-width: 1024px) {
+      max-width: 145px;
+      padding-bottom: 8px;
+      padding-left: 10px;
+    }
+
       &_logo,
       &_text {
       font-family: 'Readex Pro';
-      margin: 16px 20px;
       font-weight: 500;
+      margin: 16px 20px;
       align-items: center;
       text-align: center;
-      background-color: $wite-color;
       border-radius: 10px;
+      background-color: $wite-color;
+
+      @media screen and (max-width: 1024px) {
+        margin: 8px 10px;
+        border-radius: 5px;
+      }
     }
     
     &_logo {
@@ -363,12 +550,23 @@
       font-size: 24px;
       line-height: 30px;
       color: $black-color;
+
+      @media screen and (max-width: 1024px) {
+        bottom: 15px;
+        font-size: 12px;
+        line-height: 15px;
+      }
     }
 
     &_text {
       font-size: 16px;
       line-height: 20px;
       color: $gr-color;
+
+      @media screen and (max-width: 1024px) {
+        font-size: 8px;
+        line-height: 10px;
+      }
     }
   }
 
@@ -378,15 +576,26 @@
     padding-bottom: 16px;
     padding-left: 20px;
 
+    @media screen and (max-width: 1024px) {
+      max-width: 145px;
+      padding-bottom: 8px;
+      padding-left: 10px;
+    }
+
     &_logo,
     &_text {
       font-family: 'Readex Pro';
-      margin: 16px 20px;
       font-weight: 500;
+      margin: 16px 20px;
       align-items: center;
       text-align: center;
-      background-color: $wite-color;
       border-radius: 10px;
+      background-color: $wite-color;
+
+      @media screen and (max-width: 1024px) {
+        margin: 8px 10px;
+        border-radius: 5px;
+      }
     }
     
     &_logo {
@@ -395,15 +604,26 @@
       font-size: 24px;
       line-height: 30px;
       color: $black-color;
+
+      @media screen and (max-width: 1024px) {
+        bottom: 15px;
+        font-size: 12px;
+        line-height: 15px;
+      }
     }
 
     &_text {
       font-size: 16px;
       line-height: 20px;
       color: $gr-color;
+
+      @media screen and (max-width: 1024px) {
+        font-size: 8px;
+        line-height: 10px;
+      }
+      
     }
   }
-
 }
 
 // CONCLUSION 
@@ -411,19 +631,34 @@
 .conclusion {
   padding: 100px 130px;
 
+  @media screen and (max-width: 1024px) {
+    padding: 50px 65px;
+  }
+
   &__block {
     padding-bottom: 77px;
-    text-align: center;
     border-radius: 16px;
+    text-align: center;
     background: $green-color;
+
+    @media screen and (max-width: 1024px) {
+      padding-bottom: 38px;
+      border-radius: 8px;
+    }
   }
 
   &__title {
-    padding-top: 85px;
     font-weight: 600;
+    padding-top: 85px;
     font-size: 32px;
     line-height: 40px;
     color: $wite-color;
+
+    @media screen and (max-width: 1024px) {
+      padding-top: 40px;
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
 
   &__text {
@@ -431,6 +666,11 @@
     font-size: 18px;
     line-height: 22px;
     color: $wite-color;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 9px;
+      line-height: 11px;
+    }
   }
 }
 
@@ -440,8 +680,16 @@
   margin-top: 108px;
   background: $green-color;
 
+  @media screen and (max-width: 1024px) {
+    margin-top: 54px;
+  }
+
   &__container {
     padding: 32px 0;
+
+    @media screen and (max-width: 1024px) {
+      padding: 16px 0;
+    }
   }
 
   &__text {
@@ -450,5 +698,10 @@
     align-items: center;
     text-align: center;
     color: $wite-color;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 8px;
+      line-height: 10px;
+    }
   }
 }

@@ -206,14 +206,13 @@ ul {
 .presentation {
   position: relative;
   max-width: 923px;
-  padding-left: 258px;
-  margin-top: 100px;
+  margin: 100px auto;
 }
 @media screen and (max-width: 1024px) {
   .presentation {
     min-width: 310px;
-    padding: 0 130px;
-    margin-top: 50px;
+    margin: 25px auto;
+    padding: 10px;
   }
 }
 .presentation__box {
@@ -271,14 +270,13 @@ ul {
 
 .discover {
   max-width: 930px;
-  padding-left: 256px;
-  margin-top: 100px;
+  margin: 100px auto;
 }
 @media screen and (max-width: 1024px) {
   .discover {
     max-width: 315px;
-    padding-left: 130px;
-    margin-top: 50px;
+    margin: 25px auto;
+    padding: 70px;
   }
 }
 .discover__box {
@@ -457,12 +455,13 @@ ul {
 
 .explore {
   max-width: 950px;
-  padding-left: 245px;
-  margin-top: 100px;
+  margin: 100px auto;
 }
 @media screen and (max-width: 1024px) {
   .explore {
     max-width: 475px;
+    margin: 25px auto;
+    padding: 70px;
   }
 }
 .explore__title {

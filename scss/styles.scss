@@ -9,6 +9,12 @@
   position: absolute;
   top: 0;
   background: transparent;
+
+  @media (min-width768px){
+    .mobile {
+      display: none;
+    }
+  }
   
   &__container {
     display: flex;

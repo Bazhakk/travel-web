@@ -10,7 +10,6 @@
   top: 0;
   background: transparent;
   
-  
   &__container {
     display: flex;
     align-items: center;
@@ -22,15 +21,11 @@
   
   svg {
    max-height: 56px;
-
-   &:hover {
-    transition: all .4s;
-    width: 150px;
-  }
   }
 }
 
 .mobile-menu {
+<<<<<<< HEAD
   position: absolute;
   top: 50px;
   right: 50px;
@@ -51,26 +46,42 @@
   @media (max-width: 1024px) {
     display: block;
   }
+=======
+  //display: none;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+>>>>>>> header
 }
 
 .main-menu {
   display: flex;
   font-size: 18px;
   line-height: 22px;
+<<<<<<< HEAD
 
   @media (max-width: 1024px) {
     display: none;
   }
   
+=======
+  // width: 100%;
+  // max-width: 430px;
+  // justify-content: space-between;
+  // flex-wrap: wrap;
+
+>>>>>>> header
   &__link {
     margin-left: 85px;
     color: $wite-color;
 
-    &:hover {
-      transition: all .4s;
-      font-size: 22px;
-      text-decoration: underline;
-    }
+    // &:hover {
+    //   transition: all .4s;
+    //   font-size: 22px;
+    //   text-decoration: underline;
+    // }
   }
 }
 
@@ -91,7 +102,11 @@
     text-align: center;
 
     @media screen and (max-width: 1024px) {
+<<<<<<< HEAD
       padding-top: 25%; // можно задать в px
+=======
+      padding-top: 130px;
+>>>>>>> header
       flex-direction: column;
     }
   }
@@ -108,8 +123,6 @@
     margin-bottom: 16px;
 
     @media screen and (max-width: 1024px) {
-      font-size: 12px;
-      line-height: 15px;
       margin-bottom: 8px;
     }
   }
@@ -120,8 +133,6 @@
     margin-bottom: 32px;
 
     @media screen and (max-width: 1024px) {
-      font-size: 24px;
-      line-height: 30px;
       margin-bottom: 16px;
     }
   }
@@ -150,7 +161,7 @@
       svg {
         path {
           transition: .4s all;
-          fill: blue;
+          fill: $tw-color;
         }
       }
     }
@@ -162,7 +173,7 @@
       svg {
         path {
           transition: .4s all;
-          fill: blue;
+          fill: $fb-color;
         }
       }
     }
@@ -174,7 +185,7 @@
       svg {
         path {
           transition: .4s all;
-          fill:red;
+          fill:$inst-color;
         }
       }
     }

@@ -25,6 +25,10 @@ section {
   overflow-x: hidden;
 }
 
+img {
+  width: 100%;
+}
+
 a {
   text-decoration: none;
 }
@@ -39,7 +43,7 @@ ul {
 }
 
 .button {
-  font-family: "Readex Pro";
+  font-family: "readex";
   font-weight: 600;
   font-size: 14px;
   line-height: 18px;
@@ -48,8 +52,6 @@ ul {
 }
 @media screen and (max-width: 1024px) {
   .button {
-    font-size: 7px;
-    line-height: 9px;
     border-radius: 4px;
     padding: 5px 9px;
   }
@@ -98,10 +100,6 @@ ul {
 .logo svg {
   max-height: 56px;
 }
-.logo svg:hover {
-  transition: all 0.4s;
-  width: 150px;
-}
 
 .mobile-menu {
   width: 30px;
@@ -111,37 +109,14 @@ ul {
   overflow: hidden;
 }
 
-.mobile-menu span {
-  width: 30px;
-  height: 2px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #FFFFFF;
-  transition: all 0.5s;
-}
-
 .main-menu {
   display: flex;
   font-size: 18px;
   line-height: 22px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 15px;
-  background: #2B6F3E;
 }
 .main-menu__link {
   margin-left: 85px;
   color: #FFFFFF;
-}
-.main-menu__link:hover {
-  transition: all 0.4s;
-  font-size: 22px;
-  text-decoration: underline;
 }
 
 .hero {
@@ -161,7 +136,7 @@ ul {
 }
 @media screen and (max-width: 1024px) {
   .hero__container {
-    padding-top: 25%;
+    padding-top: 130px;
     flex-direction: column;
   }
 }
@@ -176,8 +151,6 @@ ul {
 }
 @media screen and (max-width: 1024px) {
   .hero__text {
-    font-size: 12px;
-    line-height: 15px;
     margin-bottom: 8px;
   }
 }
@@ -188,8 +161,6 @@ ul {
 }
 @media screen and (max-width: 1024px) {
   .hero__title {
-    font-size: 24px;
-    line-height: 30px;
     margin-bottom: 16px;
   }
 }
@@ -214,15 +185,15 @@ ul {
 }
 .social__twitter:hover svg path {
   transition: 0.4s all;
-  fill: blue;
+  fill: rgb(114, 162, 207);
 }
 .social__facebook:hover svg path {
   transition: 0.4s all;
-  fill: blue;
+  fill: rgb(78, 78, 189);
 }
 .social__instagram:hover svg path {
   transition: 0.4s all;
-  fill: red;
+  fill: rgb(224, 53, 53);
 }
 
 .presentation {

@@ -31,13 +31,36 @@
 }
 
 .mobile-menu {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  flex-direction: column;
   display: none;
+  padding: 20px;
+  background-color: #fff;
+
+  a {
+    color: black;
+  }
+}
+
+.burger {
+  color: antiquewhite;
+  display: none;
+
+  @media (max-width: 1024px) {
+    display: block;
+  }
 }
 
 .main-menu {
   display: flex;
   font-size: 18px;
   line-height: 22px;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
   
   &__link {
     margin-left: 85px;
@@ -57,17 +80,18 @@
   background-image: url("../img/bg-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 
-  @media screen and (max-width: 1024px) {
-    height: 60vh;
-  }
+  // @media screen and (max-width: 1024px) {
+  //   height: 60vh;
+  // }
   
   &__container {
     padding-top: 15%;
     text-align: center;
 
     @media screen and (max-width: 1024px) {
-      padding-top: 25%;
+      padding-top: 25%; // можно задать в px
       flex-direction: column;
     }
   }

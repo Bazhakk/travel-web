@@ -39,7 +39,7 @@ ul {
 }
 
 .button {
-  font-family: "Readex Pro";
+  font-family: "readex";
   font-weight: 600;
   font-size: 14px;
   line-height: 18px;
@@ -104,13 +104,37 @@ ul {
 }
 
 .mobile-menu {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  flex-direction: column;
   display: none;
+  padding: 20px;
+  background-color: #fff;
+}
+.mobile-menu a {
+  color: black;
+}
+
+.burger {
+  color: antiquewhite;
+  display: none;
+}
+@media (max-width: 1024px) {
+  .burger {
+    display: block;
+  }
 }
 
 .main-menu {
   display: flex;
   font-size: 18px;
   line-height: 22px;
+}
+@media (max-width: 1024px) {
+  .main-menu {
+    display: none;
+  }
 }
 .main-menu__link {
   margin-left: 85px;
@@ -127,11 +151,7 @@ ul {
   background-image: url("../img/bg-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-}
-@media screen and (max-width: 1024px) {
-  .hero {
-    height: 60vh;
-  }
+  background-position: center;
 }
 .hero__container {
   padding-top: 15%;

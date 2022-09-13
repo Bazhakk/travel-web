@@ -25,7 +25,6 @@
 }
 
 .mobile-menu {
-<<<<<<< HEAD
   position: absolute;
   top: 50px;
   right: 50px;
@@ -46,33 +45,28 @@
   @media (max-width: 1024px) {
     display: block;
   }
-=======
   //display: none;
   width: 30px;
   height: 30px;
   position: relative;
   z-index: 2;
   overflow: hidden;
->>>>>>> header
 }
 
 .main-menu {
   display: flex;
   font-size: 18px;
   line-height: 22px;
-<<<<<<< HEAD
 
   @media (max-width: 1024px) {
     display: none;
   }
   
-=======
   // width: 100%;
   // max-width: 430px;
   // justify-content: space-between;
   // flex-wrap: wrap;
 
->>>>>>> header
   &__link {
     margin-left: 85px;
     color: $wite-color;
@@ -102,11 +96,8 @@
     text-align: center;
 
     @media screen and (max-width: 1024px) {
-<<<<<<< HEAD
       padding-top: 25%; // можно задать в px
-=======
       padding-top: 130px;
->>>>>>> header
       flex-direction: column;
     }
   }

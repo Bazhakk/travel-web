@@ -102,7 +102,6 @@ ul {
 }
 
 .mobile-menu {
-<<<<<<< HEAD
   position: absolute;
   top: 50px;
   right: 50px;
@@ -118,18 +117,16 @@ ul {
 .burger {
   color: antiquewhite;
   display: none;
-}
-@media (max-width: 1024px) {
-  .burger {
-    display: block;
-  }
-=======
   width: 30px;
   height: 30px;
   position: relative;
   z-index: 2;
   overflow: hidden;
->>>>>>> header
+}
+@media (max-width: 1024px) {
+  .burger {
+    display: block;
+  }
 }
 
 .main-menu {
@@ -160,6 +157,7 @@ ul {
 }
 @media screen and (max-width: 1024px) {
   .hero__container {
+    padding-top: 25%;
     padding-top: 130px;
     flex-direction: column;
   }

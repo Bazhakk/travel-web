@@ -18,6 +18,11 @@
 }
 
 .logo {
+
+  &:hover {
+    transition: .7s;
+    transform: rotateX(360deg);
+  }
   
   svg {
    max-height: 56px;
@@ -25,13 +30,16 @@
 }
 
 .mobile-menu {
-  position: absolute;
-  top: 50px;
-  right: 50px;
-  flex-direction: column;
   display: none;
-  padding: 20px;
-  background-color: #fff;
+  position: absolute;
+  flex-direction: column;
+  top: 30px;
+  right: 30px;
+  padding: 10px 10px;
+  font-size: 18px;
+  line-height: 22px;
+  border-radius: 6px;
+  background-color: $wite-color;
 
   a {
     color: black;
@@ -39,43 +47,39 @@
 }
 
 .burger {
-  color: antiquewhite;
   display: none;
+  width: 30px;
+  height: 30px;
+  margin-left: 20px;
+  background-image: url("../img/burger.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
 
+  &-active {
+    background-image: url("../img/close.svg");
+  }
+  
   @media (max-width: 1024px) {
     display: block;
   }
-  //display: none;
-  width: 30px;
-  height: 30px;
-  position: relative;
-  z-index: 2;
-  overflow: hidden;
 }
 
 .main-menu {
   display: flex;
   font-size: 18px;
   line-height: 22px;
-
-  @media (max-width: 1024px) {
-    display: none;
-  }
-  
-  // width: 100%;
-  // max-width: 430px;
-  // justify-content: space-between;
-  // flex-wrap: wrap;
+  width: 100%;
+  //max-width: 430px;
+  justify-content: space-between;
+  //flex-wrap: wrap;
 
   &__link {
     margin-left: 85px;
     color: $wite-color;
+  }
 
-    // &:hover {
-    //   transition: all .4s;
-    //   font-size: 22px;
-    //   text-decoration: underline;
-    // }
+  @media (max-width: 1024px) {
+    display: none;
   }
 }
 
@@ -86,20 +90,16 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
-  // @media screen and (max-width: 1024px) {
-  //   height: 60vh;
-  // }
   
   &__container {
     padding-top: 15%;
     text-align: center;
 
     @media screen and (max-width: 1024px) {
-      padding-top: 25%; // можно задать в px
       padding-top: 130px;
       flex-direction: column;
     }
+
   }
 
   &__text,
@@ -145,42 +145,6 @@
       margin-top: 16px;
     }
   }
-
-  &__twitter {
-
-    &:hover {
-      svg {
-        path {
-          transition: .4s all;
-          fill: $tw-color;
-        }
-      }
-    }
-  }
-
-  &__facebook {
-    &:hover {
-      
-      svg {
-        path {
-          transition: .4s all;
-          fill: $fb-color;
-        }
-      }
-    }
-  }
-
-  &__instagram {
-    &:hover {
-
-      svg {
-        path {
-          transition: .4s all;
-          fill:$inst-color;
-        }
-      }
-    }
-  }
 }
 
 //PRESENTATION
@@ -194,10 +158,13 @@
     min-width: 310px;
     margin: 25px auto;
     padding: 10px;
+    
   }
 
   &__box {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 
     @media screen and (max-width: 1024px) {
       flex-direction: column;
@@ -233,8 +200,6 @@
     color: $black-color;
 
     @media screen and (max-width: 1024px) {
-      font-size: 16px;
-      line-height: 20px;
       margin-bottom: 12px;
     }
   }
@@ -243,11 +208,6 @@
     font-size: 18px;
     line-height: 22px;
     color: $gr-color;
-
-    @media screen and (max-width: 1024px) {
-      font-size: 9px;
-      line-height: 11px;
-    }
   }
   }
 
@@ -255,60 +215,54 @@
 
 .discover {
   max-width: 930px;
-  margin: 100px auto;
+  margin: 100px auto 0;
 
   @media screen and (max-width: 1024px) {
     max-width: 315px;
-    margin: 25px auto;
-    padding: 70px;
+    margin: 50px auto 0;
   }
 
   &__box {
     display: flex;
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 768px) {
       flex-direction: column;
+      margin: 0 auto;
     }
   }
 
   &__img {
     margin: 16px;
     
-    @media screen and (max-width: 1024px) {
-      margin: 8px;
-    }
+    // @media screen and (max-width: 1024px) {
+    //   margin: 8px;
+    // }
 
     &_1,
     &_3 {
       max-width: 274px;
 
-      @media screen and (max-width: 1024px) {
-        max-width: 140px;
-      }
+      // @media screen and (max-width: 1024px) {
+      //   max-width: 140px;
+      // }
     }
 
     &_2 {
       max-width: 316px;
 
-      @media screen and (max-width: 1024px) {
-        max-width: 153px;
-      }
+      // @media screen and (max-width: 1024px) {
+      //   max-width: 153px;
+      // }
     }
   }
 
   &__title {
-    font-family: 'Readex Pro';
     font-weight: 500;
     font-size: 32px;
     line-height: 40px;
     align-items: center;
     text-align: center;
     color: $black-color;
-
-    @media screen and (max-width: 1024px) {
-      font-size: 16px;
-      line-height: 20px;
-    }
   }
 
   &__pakis {
@@ -326,7 +280,6 @@
 
     &_logo {
       position: absolute;
-      font-family: 'Readex Pro';
       font-weight: 600;
       bottom: 30px;
       font-size: 24px;
@@ -341,17 +294,16 @@
     }
 
     &_text {
-      font-family: 'Readex Pro';
-      font-weight: 400;
-      font-size: 16px;
+      font-size: 14px;//
       line-height: 20px;
       color: $wite-color;
 
       @media screen and (max-width: 1024px) {
-        font-size: 18px;
-        line-height: 20px;
+        font-size: 8px;
+        line-height: 10px;
       }
     }
+
   }
 
   &__suluban {
@@ -368,7 +320,6 @@
 
     &_logo {
       position: absolute;
-      font-family: 'Readex Pro';
       font-weight: 600;
       bottom: 30px;
       font-size: 24px;
@@ -383,8 +334,6 @@
     }
 
     &_text {
-      font-family: 'Readex Pro';
-      font-weight: 400;
       font-size: 16px;
       line-height: 20px;
       color: $wite-color;
@@ -410,7 +359,6 @@
 
     &_logo {
       position: absolute;
-      font-family: 'Readex Pro';
       font-weight: 600;
       bottom: 30px;
       font-size: 24px;
@@ -425,8 +373,6 @@
     }
 
     &_text {
-      font-family: 'Readex Pro';
-      font-weight: 400;
       font-size: 16px;
       line-height: 20px;
       color: $wite-color;
@@ -443,34 +389,28 @@
 
 .explore {
   max-width: 950px;
-  margin: 100px auto;
+  margin: 100px auto 0;
 
   @media screen and (max-width: 1024px) {
-    max-width: 475px;
-    margin: 25px auto;
-    padding: 70px;
+    max-width: 275px;
+    margin: 50px auto 0;
   }
 
   &__title {
-    font-family: 'Readex Pro';
     font-weight: 500;
     font-size: 32px;
     line-height: 40px;
     align-items: center;
     text-align: center;
     color: $black-color;
-
-    @media screen and (max-width: 1024px) {
-      font-size: 18px;
-      line-height: 20px;
-    }
   }
 
   &__box {
     display: flex;
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 768px) {
       flex-direction: column;
+      justify-content: center;
       margin: 0 auto;
     }
   }
@@ -488,10 +428,6 @@
     &_2,
     &_3 {
       max-width: 295px;
-
-      @media screen and (max-width: 1024px) {
-        max-width: 145px;
-      }
     }
   }
 
@@ -509,7 +445,6 @@
     
     &_logo,
     &_text {
-      font-family: 'Readex Pro';
       font-weight: 500;
       margin: 16px 20px;
       align-items: center;
@@ -523,18 +458,18 @@
       }
     }
     
-  &_logo {
-    position: absolute;
-    bottom: 30px;
-    font-size: 24px;
-    line-height: 30px;
-    color: $black-color;
+    &_logo {
+      position: absolute;
+      bottom: 30px;
+      font-size: 24px;
+      line-height: 30px;
+      color: $black-color;
 
-    @media screen and (max-width: 1024px) {
-      bottom: 15px;
-      font-size: 12px;
-      line-height: 15px;
-    }
+      @media screen and (max-width: 1024px) {
+        bottom: 15px;
+        font-size: 12px;
+        line-height: 15px;
+      }
   }
 
     &_text {
@@ -563,7 +498,6 @@
 
       &_logo,
       &_text {
-      font-family: 'Readex Pro';
       font-weight: 500;
       margin: 16px 20px;
       align-items: center;
@@ -577,31 +511,31 @@
       }
     }
     
-    &_logo {
-      position: absolute;
-      bottom: 30px;
-      font-size: 24px;
-      line-height: 30px;
-      color: $black-color;
+      &_logo {
+        position: absolute;
+        bottom: 30px;
+        font-size: 24px;
+        line-height: 30px;
+        color: $black-color;
 
-      @media screen and (max-width: 1024px) {
-        bottom: 15px;
-        font-size: 12px;
-        line-height: 15px;
+        @media screen and (max-width: 1024px) {
+          bottom: 15px;
+          font-size: 12px;
+          line-height: 15px;
+        }
+      }
+
+      &_text {
+        font-size: 16px;
+        line-height: 20px;
+        color: $gr-color;
+
+        @media screen and (max-width: 1024px) {
+          font-size: 8px;
+          line-height: 10px;
+        }
       }
     }
-
-    &_text {
-      font-size: 16px;
-      line-height: 20px;
-      color: $gr-color;
-
-      @media screen and (max-width: 1024px) {
-        font-size: 8px;
-        line-height: 10px;
-      }
-    }
-  }
 
   &__trisik {
     position: relative;
@@ -617,7 +551,6 @@
 
     &_logo,
     &_text {
-      font-family: 'Readex Pro';
       font-weight: 500;
       margin: 16px 20px;
       align-items: center;
@@ -662,10 +595,13 @@
 // CONCLUSION 
 
 .conclusion {
-  padding: 100px 130px;
 
-  @media screen and (max-width: 1024px) {
-    padding: 50px 65px;
+  &__container {
+    margin: 100px 130px;
+
+    @media screen and (max-width: 1024px) {
+      margin: 50px 60px;
+    }
   }
 
   &__block {
@@ -673,11 +609,6 @@
     border-radius: 16px;
     text-align: center;
     background: $green-color;
-
-    @media screen and (max-width: 1024px) {
-      padding-bottom: 38px;
-      border-radius: 8px;
-    }
   }
 
   &__title {
@@ -686,43 +617,22 @@
     font-size: 32px;
     line-height: 40px;
     color: $wite-color;
-
-    @media screen and (max-width: 1024px) {
-      padding-top: 40px;
-      font-size: 16px;
-      line-height: 20px;
-    }
   }
 
   &__text {
-    font-weight: 400;
     font-size: 18px;
     line-height: 22px;
     color: $wite-color;
-
-    @media screen and (max-width: 1024px) {
-      font-size: 9px;
-      line-height: 11px;
-    }
   }
 }
 
 //FOOTER
 
 .footer {
-  margin-top: 108px;
   background: $green-color;
-
-  @media screen and (max-width: 1024px) {
-    margin-top: 54px;
-  }
 
   &__container {
     padding: 32px 0;
-
-    @media screen and (max-width: 1024px) {
-      padding: 16px 0;
-    }
   }
 
   &__text {
@@ -731,10 +641,5 @@
     align-items: center;
     text-align: center;
     color: $wite-color;
-
-    @media screen and (max-width: 1024px) {
-      font-size: 8px;
-      line-height: 10px;
-    }
   }
 }

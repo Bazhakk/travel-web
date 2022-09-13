@@ -1,8 +1,8 @@
 body {
   margin: 0;
   font-family: "readex";
-  font-size: 32px;
   font-weight: 400;
+  font-size: 32px;
 }
 
 main,
@@ -67,6 +67,36 @@ ul {
   transition: all 0.4s;
   color: #2B6F3E;
   background-color: #959595;
+}
+
+.link-anima {
+  position: relative;
+}
+.link-anima::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background-color: #FFFFFF;
+  transition: width 0.4s;
+}
+.link-anima:hover::before {
+  width: 100%;
+}
+
+.social__twitter:hover svg path {
+  transition: 0.4s all;
+  fill: rgb(114, 162, 207);
+}
+.social__facebook:hover svg path {
+  transition: 0.4s all;
+  fill: rgb(78, 78, 189);
+}
+.social__instagram:hover svg path {
+  transition: 0.4s all;
+  fill: rgb(224, 53, 53);
 }
 
 /*# sourceMappingURL=common.css.map */

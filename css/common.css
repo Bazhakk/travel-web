@@ -79,7 +79,7 @@ ul {
   bottom: -6px;
   width: 0;
   height: 2px;
-  background-color: #FFFFFF;
+  background-color: #959595;
   transition: width 0.4s;
 }
 .link-anima:hover::before {

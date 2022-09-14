@@ -94,7 +94,7 @@ ul {
   bottom: -6px;
   width: 0;
   height: 2px;
-  background-color: #FFFFFF;
+  background-color: #959595;
   transition: width 0.4s;
 }
 .link-anima:hover::before {
@@ -139,16 +139,18 @@ ul {
   display: none;
   position: absolute;
   flex-direction: column;
-  top: 30px;
+  top: 40px;
   right: 30px;
-  padding: 10px 10px;
+  padding: 30px 30px;
   font-size: 18px;
   line-height: 22px;
   border-radius: 6px;
   background-color: #FFFFFF;
 }
 .mobile-menu a {
-  color: black;
+  margin: 0 auto;
+  margin: 8px;
+  color: #202020;
 }
 
 .burger {
@@ -160,7 +162,7 @@ ul {
   background-size: contain;
   background-repeat: no-repeat;
 }
-.burger-active {
+.burger:hover {
   background-image: url("../img/close.svg");
 }
 @media (max-width: 1024px) {
@@ -267,14 +269,14 @@ ul {
 @media screen and (max-width: 1024px) {
   .presentation__box {
     flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
   }
-}
-.presentation__img {
-  max-width: 100%;
 }
 @media screen and (max-width: 1024px) {
   .presentation__img {
-    min-width: 15%;
+    margin: 0 auto;
+    justify-content: center;
   }
 }
 .presentation__about {
@@ -319,7 +321,7 @@ ul {
 .discover__box {
   display: flex;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .discover__box {
     flex-direction: column;
     margin: 0 auto;
@@ -371,7 +373,7 @@ ul {
   }
 }
 .discover__pakis_text {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
 }
@@ -481,7 +483,7 @@ ul {
 .explore__box {
   display: flex;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .explore__box {
     flex-direction: column;
     justify-content: center;

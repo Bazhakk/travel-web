@@ -1,7 +1,6 @@
 @import "variables";
 
 body {
-  //padding: 0;
   margin: 0;
   font-family: "readex";
   font-weight: 400;
@@ -13,13 +12,10 @@ section {
  overflow-x: hidden;
 }
 
-// section {
-//   padding: 80px 9%;
-// }
-
 img {
   width: 100%;
 }
+
 a {
  text-decoration: none;
   }
@@ -94,7 +90,7 @@ ul {
     bottom: -6px;
     width: 0;
     height: 2px;
-    background-color: $wite-color;
+    background-color: $gr-color;
     transition: width .4s;
   }
 
@@ -143,13 +139,5 @@ ul {
     }
   }
 }
-
-
-// .mobil-menu {
-//   &:hover {
-//     border-bottom: 3px solid $black-color;
-//     padding-bottom: 10px;
-// }
-// }
 
 

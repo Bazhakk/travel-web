@@ -181,10 +181,10 @@ ul {
   font-size: 18px;
   line-height: 22px;
   width: 100%;
+  max-width: 430px;
   justify-content: space-between;
 }
 .main-menu__link {
-  margin-left: 85px;
   color: #FFFFFF;
 }
 @media (max-width: 1024px) {

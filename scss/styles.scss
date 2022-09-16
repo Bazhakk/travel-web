@@ -74,11 +74,10 @@
   width: 100%;
   max-width: 430px;
   justify-content: space-between;
-  //flex-wrap: wrap;
 
 
   &__link {
-    margin-left: 85px;
+    // margin-left: 85px; // Зачем это здесь?))) Если надо задать расстояния между ними - тогда уменьшай из медиазапросами... однако это тебе не надо, поскольку ты применила max-width и flex для родителя, а значит они автоматически станут на одинаковые расстояния со свойством justify-content: space-between
     color: $wite-color;
   }
 

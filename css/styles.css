@@ -38,8 +38,10 @@ ul {
 }
 
 .container {
-  max-width: 1180px;
+  max-width: 1150px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .button {
@@ -199,6 +201,12 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+@media (max-width: 1024px) {
+  .hero {
+    height: 80vh;
+    background-image: url("../img/beach-mobile.png");
+  }
 }
 .hero__container {
   padding-top: 15%;

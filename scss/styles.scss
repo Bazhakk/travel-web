@@ -92,6 +92,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  @media (max-width: 1024px) {
+    height: 80vh;
+    background-image: url('../img/beach-mobile.png');
+  }
   
   &__container {
     padding-top: 15%;

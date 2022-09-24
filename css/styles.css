@@ -169,7 +169,7 @@ ul {
   background-size: contain;
   background-repeat: no-repeat;
 }
-.burger:hover {
+.burger-active {
   background-image: url("../img/close.svg");
 }
 @media (max-width: 1024px) {
@@ -196,17 +196,11 @@ ul {
 }
 
 .hero {
-  height: 85vh;
+  height: 75vh;
   background-image: url("../img/bg-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-@media (max-width: 1024px) {
-  .hero {
-    height: 80vh;
-    background-image: url("../img/beach-mobile.png");
-  }
 }
 .hero__container {
   padding-top: 15%;

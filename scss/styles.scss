@@ -57,13 +57,12 @@
   background-size: contain;
   background-repeat: no-repeat;
 
-  &:hover {
+  &-active {
     background-image: url("../img/close.svg");
   }
   
   @media (max-width: 1024px) {
     display: block;
-    
   }
 }
 

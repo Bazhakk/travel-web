@@ -143,34 +143,42 @@ ul {
 }
 
 .mobile-menu {
-  display: none;
-  position: absolute;
+  height: 100vh;
+  display: flex;
+  position: fixed;
+  z-index: 9;
   flex-direction: column;
-  top: 40px;
-  right: 30px;
-  padding: 30px 30px;
-  font-size: 18px;
-  line-height: 22px;
-  border-radius: 6px;
+  top: 100px;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 24px;
+  line-height: 28px;
   background-color: #FFFFFF;
 }
-.mobile-menu a {
+.mobile-menu:hover {
+  color: #2B6F3E;
+  text-decoration: underline;
+}
+.mobile-menu__menu {
   margin: 0 auto;
-  margin: 8px;
+  margin: 18px;
   color: #202020;
 }
 
 .burger {
   display: none;
-  width: 30px;
-  height: 30px;
+  width: 60px;
+  height: 60px;
   margin-left: 20px;
-  background-image: url("../img/burger.svg");
+  background-image: url("../img/burger-menu.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
 .burger-active {
-  background-image: url("../img/close.svg");
+  background-image: url("../img/close-menu.svg");
 }
 @media (max-width: 1024px) {
   .burger {
@@ -272,6 +280,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 0 auto;
 }
 @media screen and (max-width: 1024px) {
   .presentation__box {

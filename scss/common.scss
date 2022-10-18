@@ -18,21 +18,20 @@ img {
 
 a {
  text-decoration: none;
-  }
+}
   
 ul {
  list-style: none;
-  }
+}
 
 .container {
     max-width: 1150px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
-  }
+}
 
-
-  //BUTTON
+//BUTTON
 .button {
   font-family: 'readex';
   font-weight: 600;
@@ -76,12 +75,11 @@ ul {
       transition: all .4s;
       color: $green-color;
       background-color: $gr-color;
+    }
   }
-}
 }
 
 //ANIMATION
-
 .link-anima {
   position: relative;
 
@@ -97,7 +95,6 @@ ul {
 
     @media (max-width: 1024px) {
       background-color: $black-color;
-      
     }
   }
 

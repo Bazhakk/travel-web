@@ -5,8 +5,8 @@
 
 .header {
   width: 100%;
-  margin-top: 32px;
   position: absolute;
+  margin-top: 32px;
   top: 0;
   background: transparent;
   
@@ -29,26 +29,36 @@
   }
 }
 
+.main-menu {
+  width: 100%;
+  max-width: 430px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  line-height: 22px;
+
+  &__link {
+    color: $wite-color;
+  }
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
+}
+
 .mobile-menu {
   height: 100vh;
-  display: flex;
-  position: fixed;
+  display: none;
   z-index: 9;
   flex-direction: column;
-  top: 100px;
+  position: fixed;
+  align-items: center;
+  top: 0;
   right: 0;
   left: 0;
-  overflow: hidden;
-  align-items: center;
-  justify-content: space-between;
   font-size: 24px;
   line-height: 28px;
   background-color: $wite-color;
-
-  &:hover {
-    color: $green-color;
-    text-decoration: underline;
-  }
 
   &__menu {
     margin: 0 auto;
@@ -58,9 +68,11 @@
 }
 
 .burger {
-  display: none;
   width: 60px;
   height: 60px;
+  display: none;
+  position: relative;
+  z-index: 9999;
   margin-left: 20px;
   background-image: url("../img/burger-menu.svg");
   background-size: contain;
@@ -75,27 +87,11 @@
   }
 }
 
-.main-menu {
-  display: flex;
-  font-size: 18px;
-  line-height: 22px;
-  width: 100%;
-  max-width: 430px;
-  justify-content: space-between;
 
-
-  &__link {
-    color: $wite-color;
-  }
-
-  @media (max-width: 1024px) {
-    display: none;
-  }
-}
 
 //HERO
 .hero {
-  height: 75vh;
+  height: 100vh;
   background-image: url("../img/bg-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -160,8 +156,8 @@
 //PRESENTATION
 
 .presentation {
-  position: relative;
   max-width: 923px;
+  position: relative;
   margin: 100px auto;
 
   @media screen and (max-width: 1024px) {
@@ -178,8 +174,8 @@
     margin: 0 auto;
 
     @media screen and (max-width: 1024px) {
-      flex-direction: column;
       margin: 0 auto;
+      flex-direction: column;
       justify-content: center;
     }
 }
@@ -206,10 +202,10 @@
   }
 
   &__title {
+    margin-bottom: 24px;
     font-weight: 500;
     font-size: 32px;
     line-height: 40px;
-    margin-bottom: 24px;
     color: $black-color;
 
     @media screen and (max-width: 1024px) {
@@ -258,17 +254,17 @@
   }
 
   &__title {
+    align-items: center;
+    text-align: center;
     font-weight: 500;
     font-size: 32px;
     line-height: 40px;
-    align-items: center;
-    text-align: center;
     color: $black-color;
   }
 
   &__pakis {
-    position: relative;
     max-width: 170px;
+    position: relative;
     padding-bottom: 30px;
     padding-left: 24px;
 
@@ -281,8 +277,8 @@
 
     &_logo {
       position: absolute;
-      font-weight: 600;
       bottom: 30px;
+      font-weight: 600;
       font-size: 24px;
       line-height: 30px;
       color: $wite-color;
@@ -308,8 +304,8 @@
   }
 
   &__suluban {
-    position: relative;
     max-width: 176px;
+    position: relative;
     padding-bottom: 30px;
     padding-left: 24px;
 
@@ -321,8 +317,8 @@
 
     &_logo {
       position: absolute;
-      font-weight: 600;
       bottom: 30px;
+      font-weight: 600;
       font-size: 24px;
       line-height: 30px;
       color: $wite-color;
@@ -347,8 +343,8 @@
   }
 
   &__karimun {
-    position: relative;
     max-width: 195px;
+    position: relative;
     padding-bottom: 30px;
     padding-left: 24px;
 
@@ -359,9 +355,9 @@
     }
 
     &_logo {
+      bottom: 30px;
       position: absolute;
       font-weight: 600;
-      bottom: 30px;
       font-size: 24px;
       line-height: 30px;
       color: $wite-color;
@@ -398,11 +394,11 @@
   }
 
   &__title {
+    align-items: center;
+    text-align: center;
     font-weight: 500;
     font-size: 32px;
     line-height: 40px;
-    align-items: center;
-    text-align: center;
     color: $black-color;
   }
 
@@ -410,9 +406,9 @@
     display: flex;
 
     @media screen and (max-width: 1024px) {
+      margin: 0 auto;
       flex-direction: column;
       justify-content: center;
-      margin: 0 auto;
     }
   }
 
@@ -433,8 +429,8 @@
   }
 
   &__drini {
-    position: relative;
     max-width: 256px;
+    position: relative;
     padding-bottom: 16px;
     padding-left: 20px;
 
@@ -446,10 +442,10 @@
     
     &_logo,
     &_text {
-      font-weight: 500;
       margin: 16px 20px;
       align-items: center;
       text-align: center;
+      font-weight: 500;
       border-radius: 10px;
       background-color: $wite-color;
 
@@ -486,8 +482,8 @@
   }
 
   &__baron {
-    position: relative;
     max-width: 256px;
+    position: relative;
     padding-bottom: 16px;
     padding-left: 20px;
 
@@ -499,10 +495,10 @@
 
       &_logo,
       &_text {
-      font-weight: 500;
       margin: 16px 20px;
       align-items: center;
       text-align: center;
+      font-weight: 500;
       border-radius: 10px;
       background-color: $wite-color;
 
@@ -539,8 +535,8 @@
     }
 
   &__trisik {
-    position: relative;
     max-width: 256px;
+    position: relative;
     padding-bottom: 16px;
     padding-left: 20px;
 
@@ -552,10 +548,10 @@
 
     &_logo,
     &_text {
-      font-weight: 500;
       margin: 16px 20px;
       align-items: center;
       text-align: center;
+      font-weight: 500;
       border-radius: 10px;
       background-color: $wite-color;
 
@@ -607,14 +603,14 @@
 
   &__block {
     padding-bottom: 77px;
-    border-radius: 16px;
     text-align: center;
+    border-radius: 16px;
     background: $green-color;
   }
 
   &__title {
-    font-weight: 600;
     padding-top: 85px;
+    font-weight: 600;
     font-size: 32px;
     line-height: 40px;
     color: $wite-color;
@@ -637,10 +633,10 @@
   }
 
   &__text {
-    font-size: 16px;
-    line-height: 20px;
     align-items: center;
     text-align: center;
+    font-size: 16px;
+    line-height: 20px;
     color: $wite-color;
   }
 }

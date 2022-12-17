@@ -123,8 +123,8 @@ ul {
 
 .header {
   width: 100%;
-  margin-top: 32px;
   position: absolute;
+  margin-top: 32px;
   top: 0;
   background: transparent;
 }
@@ -142,25 +142,36 @@ ul {
   max-height: 56px;
 }
 
+.main-menu {
+  width: 100%;
+  max-width: 430px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  line-height: 22px;
+}
+.main-menu__link {
+  color: #FFFFFF;
+}
+@media (max-width: 1024px) {
+  .main-menu {
+    display: none;
+  }
+}
+
 .mobile-menu {
   height: 100vh;
-  display: flex;
-  position: fixed;
+  display: none;
   z-index: 9;
   flex-direction: column;
-  top: 100px;
+  position: fixed;
+  align-items: center;
+  top: 0;
   right: 0;
   left: 0;
-  overflow: hidden;
-  align-items: center;
-  justify-content: space-between;
   font-size: 24px;
   line-height: 28px;
   background-color: #FFFFFF;
-}
-.mobile-menu:hover {
-  color: #2B6F3E;
-  text-decoration: underline;
 }
 .mobile-menu__menu {
   margin: 0 auto;
@@ -169,9 +180,11 @@ ul {
 }
 
 .burger {
-  display: none;
   width: 60px;
   height: 60px;
+  display: none;
+  position: relative;
+  z-index: 9999;
   margin-left: 20px;
   background-image: url("../img/burger-menu.svg");
   background-size: contain;
@@ -186,25 +199,8 @@ ul {
   }
 }
 
-.main-menu {
-  display: flex;
-  font-size: 18px;
-  line-height: 22px;
-  width: 100%;
-  max-width: 430px;
-  justify-content: space-between;
-}
-.main-menu__link {
-  color: #FFFFFF;
-}
-@media (max-width: 1024px) {
-  .main-menu {
-    display: none;
-  }
-}
-
 .hero {
-  height: 75vh;
+  height: 100vh;
   background-image: url("../img/bg-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -265,8 +261,8 @@ ul {
 }
 
 .presentation {
-  position: relative;
   max-width: 923px;
+  position: relative;
   margin: 100px auto;
 }
 @media screen and (max-width: 1024px) {
@@ -284,8 +280,8 @@ ul {
 }
 @media screen and (max-width: 1024px) {
   .presentation__box {
-    flex-direction: column;
     margin: 0 auto;
+    flex-direction: column;
     justify-content: center;
   }
 }
@@ -307,10 +303,10 @@ ul {
   align-items: center;
 }
 .presentation__title {
+  margin-bottom: 24px;
   font-weight: 500;
   font-size: 32px;
   line-height: 40px;
-  margin-bottom: 24px;
   color: #202020;
 }
 @media screen and (max-width: 1024px) {
@@ -353,16 +349,16 @@ ul {
   max-width: 316px;
 }
 .discover__title {
+  align-items: center;
+  text-align: center;
   font-weight: 500;
   font-size: 32px;
   line-height: 40px;
-  align-items: center;
-  text-align: center;
   color: #202020;
 }
 .discover__pakis {
-  position: relative;
   max-width: 170px;
+  position: relative;
   padding-bottom: 30px;
   padding-left: 24px;
 }
@@ -375,8 +371,8 @@ ul {
 }
 .discover__pakis_logo {
   position: absolute;
-  font-weight: 600;
   bottom: 30px;
+  font-weight: 600;
   font-size: 24px;
   line-height: 30px;
   color: #FFFFFF;
@@ -400,8 +396,8 @@ ul {
   }
 }
 .discover__suluban {
-  position: relative;
   max-width: 176px;
+  position: relative;
   padding-bottom: 30px;
   padding-left: 24px;
 }
@@ -414,8 +410,8 @@ ul {
 }
 .discover__suluban_logo {
   position: absolute;
-  font-weight: 600;
   bottom: 30px;
+  font-weight: 600;
   font-size: 24px;
   line-height: 30px;
   color: #FFFFFF;
@@ -439,8 +435,8 @@ ul {
   }
 }
 .discover__karimun {
-  position: relative;
   max-width: 195px;
+  position: relative;
   padding-bottom: 30px;
   padding-left: 24px;
 }
@@ -452,9 +448,9 @@ ul {
   }
 }
 .discover__karimun_logo {
+  bottom: 30px;
   position: absolute;
   font-weight: 600;
-  bottom: 30px;
   font-size: 24px;
   line-height: 30px;
   color: #FFFFFF;
@@ -489,11 +485,11 @@ ul {
   }
 }
 .explore__title {
+  align-items: center;
+  text-align: center;
   font-weight: 500;
   font-size: 32px;
   line-height: 40px;
-  align-items: center;
-  text-align: center;
   color: #202020;
 }
 .explore__box {
@@ -501,9 +497,9 @@ ul {
 }
 @media screen and (max-width: 1024px) {
   .explore__box {
+    margin: 0 auto;
     flex-direction: column;
     justify-content: center;
-    margin: 0 auto;
   }
 }
 .explore__img {
@@ -520,8 +516,8 @@ ul {
   max-width: 295px;
 }
 .explore__drini {
-  position: relative;
   max-width: 256px;
+  position: relative;
   padding-bottom: 16px;
   padding-left: 20px;
 }
@@ -533,10 +529,10 @@ ul {
   }
 }
 .explore__drini_logo, .explore__drini_text {
-  font-weight: 500;
   margin: 16px 20px;
   align-items: center;
   text-align: center;
+  font-weight: 500;
   border-radius: 10px;
   background-color: #FFFFFF;
 }
@@ -572,8 +568,8 @@ ul {
   }
 }
 .explore__baron {
-  position: relative;
   max-width: 256px;
+  position: relative;
   padding-bottom: 16px;
   padding-left: 20px;
 }
@@ -585,10 +581,10 @@ ul {
   }
 }
 .explore__baron_logo, .explore__baron_text {
-  font-weight: 500;
   margin: 16px 20px;
   align-items: center;
   text-align: center;
+  font-weight: 500;
   border-radius: 10px;
   background-color: #FFFFFF;
 }
@@ -624,8 +620,8 @@ ul {
   }
 }
 .explore__trisik {
-  position: relative;
   max-width: 256px;
+  position: relative;
   padding-bottom: 16px;
   padding-left: 20px;
 }
@@ -637,10 +633,10 @@ ul {
   }
 }
 .explore__trisik_logo, .explore__trisik_text {
-  font-weight: 500;
   margin: 16px 20px;
   align-items: center;
   text-align: center;
+  font-weight: 500;
   border-radius: 10px;
   background-color: #FFFFFF;
 }
@@ -686,13 +682,13 @@ ul {
 }
 .conclusion__block {
   padding-bottom: 77px;
-  border-radius: 16px;
   text-align: center;
+  border-radius: 16px;
   background: #2B6F3E;
 }
 .conclusion__title {
-  font-weight: 600;
   padding-top: 85px;
+  font-weight: 600;
   font-size: 32px;
   line-height: 40px;
   color: #FFFFFF;
@@ -710,10 +706,10 @@ ul {
   padding: 32px 0;
 }
 .footer__text {
-  font-size: 16px;
-  line-height: 20px;
   align-items: center;
   text-align: center;
+  font-size: 16px;
+  line-height: 20px;
   color: #FFFFFF;
 }
 

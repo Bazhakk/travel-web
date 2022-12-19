@@ -1,5 +1,5 @@
 jQuery(document).ready(function ( $ ) {
-  
+  //BURGER
   $(document).on('click', '#burger', ()=>{
     $('#burger').toggleClass('burger-active');
     $('#mobile-menu').slideToggle();
@@ -11,6 +11,11 @@ jQuery(document).ready(function ( $ ) {
       $('#burger').removeClass('burger-active');
     }
     e.stopPropagation();
+  });
+
+  // AOS init
+  AOS.init({
+    once: true
   });
 
 });

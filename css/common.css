@@ -43,29 +43,30 @@ ul {
     padding: 5px 9px;
   }
 }
-.button_dark {
+.button_hero {
   background-color: #2B6F3E;
   color: #FFFFFF;
 }
-.button_dark:hover {
+.button_hero:hover {
   transition: all 0.4s;
   color: #2B6F3E;
   background-color: #FFFFFF;
 }
-.button_link {
+.button_presentation {
   color: #FFFFFF;
   background: #2B6F3E;
 }
-.button_link:hover {
+.button_presentation:hover {
   transition: all 0.4s;
   color: #2B6F3E;
   background-color: #FFFFFF;
 }
-.button_light {
+.button_conclusion {
+  border: none;
   color: #2B6F3E;
   background: #FFFFFF;
 }
-.button_light:hover {
+.button_conclusion:hover {
   transition: all 0.4s;
   color: #2B6F3E;
   background-color: #959595;

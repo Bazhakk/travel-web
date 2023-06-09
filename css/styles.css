@@ -58,29 +58,30 @@ ul {
     padding: 5px 9px;
   }
 }
-.button_dark {
+.button_hero {
   background-color: #2B6F3E;
   color: #FFFFFF;
 }
-.button_dark:hover {
+.button_hero:hover {
   transition: all 0.4s;
   color: #2B6F3E;
   background-color: #FFFFFF;
 }
-.button_link {
+.button_presentation {
   color: #FFFFFF;
   background: #2B6F3E;
 }
-.button_link:hover {
+.button_presentation:hover {
   transition: all 0.4s;
   color: #2B6F3E;
   background-color: #FFFFFF;
 }
-.button_light {
+.button_conclusion {
+  border: none;
   color: #2B6F3E;
   background: #FFFFFF;
 }
-.button_light:hover {
+.button_conclusion:hover {
   transition: all 0.4s;
   color: #2B6F3E;
   background-color: #959595;
@@ -127,6 +128,7 @@ ul {
   margin-top: 32px;
   top: 0;
   background: transparent;
+  z-index: 2;
 }
 .header__container {
   display: flex;
@@ -134,10 +136,6 @@ ul {
   justify-content: space-between;
 }
 
-.logo:hover {
-  transition: 0.7s;
-  transform: rotateX(360deg);
-}
 .logo svg {
   max-height: 56px;
 }
@@ -160,22 +158,25 @@ ul {
 }
 
 .mobile-menu {
-  height: 100vh;
+  width: 30vh;
+  height: 60vh;
   display: none;
-  z-index: 9;
-  flex-direction: column;
+  z-index: 999999;
   position: fixed;
-  align-items: center;
-  top: 0;
+  top: 25px;
   right: 0;
-  left: 0;
-  font-size: 24px;
-  line-height: 28px;
+  z-index: 3;
   background-color: #FFFFFF;
 }
 .mobile-menu__menu {
-  margin: 0 auto;
-  margin: 18px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 35%;
+  align-items: center;
+  font-family: "Readex Pro";
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 22px;
   color: #202020;
 }
 
@@ -186,12 +187,12 @@ ul {
   position: relative;
   z-index: 9999;
   margin-left: 20px;
-  background-image: url("../img/burger-menu.svg");
+  background-image: url("../img/burger.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
 .burger-active {
-  background-image: url("../img/close-menu.svg");
+  background-image: url("../img/close.svg");
 }
 @media (max-width: 1024px) {
   .burger {
@@ -212,7 +213,7 @@ ul {
 }
 @media screen and (max-width: 1024px) {
   .hero__container {
-    padding-top: 90px;
+    padding-top: 130px;
     flex-direction: column;
   }
 }
@@ -261,15 +262,10 @@ ul {
 }
 
 .presentation {
-  max-width: 923px;
+  width: 930px;
   position: relative;
-  margin: 100px auto;
-}
-@media screen and (max-width: 1024px) {
-  .presentation {
-    margin: 25px auto;
-    padding: 10px;
-  }
+  margin: 0 auto;
+  padding: 100px 0;
 }
 .presentation__box {
   display: flex;
@@ -321,7 +317,7 @@ ul {
 
 .discover {
   max-width: 930px;
-  margin: 100px auto 0;
+  margin: 0 auto;
 }
 @media screen and (max-width: 1024px) {
   .discover {
@@ -329,383 +325,153 @@ ul {
     margin: 50px auto 0;
   }
 }
-.discover__box {
-  display: flex;
-}
-@media screen and (max-width: 1024px) {
-  .discover__box {
-    flex-direction: column;
-    margin: 0 auto;
-  }
-}
-.discover__img {
-  margin: 16px;
-}
-.discover__img_1, .discover__img_3 {
-  max-width: 274px;
-}
-.discover__img_2 {
-  max-width: 316px;
-}
 .discover__title {
-  align-items: center;
+  max-width: 400px;
+  margin: 0 auto;
   text-align: center;
   font-weight: 500;
   font-size: 32px;
   line-height: 40px;
   color: #202020;
 }
-.discover__pakis {
-  max-width: 170px;
+.discover .item {
+  display: flex;
+  gap: 32px;
+}
+.discover .item__box {
+  max-width: 145px;
   position: relative;
-  padding-bottom: 30px;
-  padding-left: 24px;
+  display: grid;
+  left: 24px;
+  bottom: 16%;
+  text-align: center;
 }
-@media screen and (max-width: 1024px) {
-  .discover__pakis {
-    max-width: 85px;
-    padding-bottom: 15px;
-    padding-left: 12px;
-  }
+.discover .item__box-second {
+  max-width: 175px;
+  position: relative;
+  display: grid;
+  left: 24px;
+  bottom: 21%;
+  text-align: center;
 }
-.discover__pakis_logo {
-  position: absolute;
-  bottom: 30px;
+.discover .item__box-third {
+  max-width: 165px;
+  position: relative;
+  display: grid;
+  left: 24px;
+  bottom: 16%;
+  text-align: center;
+}
+.discover .item__title {
+  font-family: "Readex Pro";
   font-weight: 600;
   font-size: 24px;
   line-height: 30px;
   color: #FFFFFF;
 }
-@media screen and (max-width: 1024px) {
-  .discover__pakis_logo {
-    bottom: 15px;
-    font-size: 12px;
-    line-height: 15px;
-  }
-}
-.discover__pakis_text {
+.discover .item__text {
+  font-family: "Readex Pro";
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
 }
-@media screen and (max-width: 1024px) {
-  .discover__pakis_text {
-    font-size: 8px;
-    line-height: 10px;
-  }
+.discover .item__img_1, .discover .item__img_3 {
+  max-width: 275px;
 }
-.discover__suluban {
-  max-width: 176px;
+.discover .item__img_2 {
+  max-width: 316px;
   position: relative;
-  padding-bottom: 30px;
-  padding-left: 24px;
-}
-@media screen and (max-width: 1024px) {
-  .discover__suluban {
-    max-width: 88px;
-    padding-bottom: 15px;
-    padding-left: 12px;
-  }
-}
-.discover__suluban_logo {
-  position: absolute;
-  bottom: 30px;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 30px;
-  color: #FFFFFF;
-}
-@media screen and (max-width: 1024px) {
-  .discover__suluban_logo {
-    bottom: 15px;
-    font-size: 12px;
-    line-height: 15px;
-  }
-}
-.discover__suluban_text {
-  font-size: 16px;
-  line-height: 20px;
-  color: #FFFFFF;
-}
-@media screen and (max-width: 1024px) {
-  .discover__suluban_text {
-    font-size: 8px;
-    line-height: 10px;
-  }
-}
-.discover__karimun {
-  max-width: 195px;
-  position: relative;
-  padding-bottom: 30px;
-  padding-left: 24px;
-}
-@media screen and (max-width: 1024px) {
-  .discover__karimun {
-    max-width: 95px;
-    padding-bottom: 15px;
-    padding-left: 12px;
-  }
-}
-.discover__karimun_logo {
-  bottom: 30px;
-  position: absolute;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 30px;
-  color: #FFFFFF;
-}
-@media screen and (max-width: 1024px) {
-  .discover__karimun_logo {
-    bottom: 15px;
-    font-size: 12px;
-    line-height: 15px;
-  }
-}
-.discover__karimun_text {
-  font-size: 16px;
-  line-height: 20px;
-  color: #FFFFFF;
-}
-@media screen and (max-width: 1024px) {
-  .discover__karimun_text {
-    font-size: 8px;
-    line-height: 10px;
-  }
+  top: -20px;
 }
 
 .explore {
   max-width: 950px;
-  margin: 100px auto 0;
-}
-@media screen and (max-width: 1024px) {
-  .explore {
-    max-width: 275px;
-    margin: 50px auto 0;
-  }
+  margin: 0 auto;
 }
 .explore__title {
-  align-items: center;
+  padding-bottom: 40px;
   text-align: center;
   font-weight: 500;
   font-size: 32px;
   line-height: 40px;
   color: #202020;
 }
-.explore__box {
+.explore .item {
   display: flex;
+  gap: 33px;
 }
-@media screen and (max-width: 1024px) {
-  .explore__box {
-    margin: 0 auto;
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-.explore__img {
-  margin: 16px;
-  border-radius: 10px;
-}
-@media screen and (max-width: 1024px) {
-  .explore__img {
-    margin: 8px;
-    border-radius: 5px;
-  }
-}
-.explore__img_1, .explore__img_2, .explore__img_3 {
+.explore .item__block {
   max-width: 295px;
+  background: url(jcob-nasyr-67sVPjK6Q7I-unsplash.jpg);
 }
-.explore__drini {
-  max-width: 256px;
-  position: relative;
-  padding-bottom: 16px;
-  padding-left: 20px;
-}
-@media screen and (max-width: 1024px) {
-  .explore__drini {
-    max-width: 130px;
-    padding-bottom: 8px;
-    padding-left: 10px;
-  }
-}
-.explore__drini_logo, .explore__drini_text {
-  margin: 16px 20px;
-  align-items: center;
-  text-align: center;
+.explore .item__title {
+  padding-bottom: 6px;
+  font-family: "Readex Pro";
   font-weight: 500;
-  border-radius: 10px;
-  background-color: #FFFFFF;
-}
-@media screen and (max-width: 1024px) {
-  .explore__drini_logo, .explore__drini_text {
-    margin: 8px 10px;
-    border-radius: 5px;
-  }
-}
-.explore__drini_logo {
-  position: absolute;
-  bottom: 30px;
   font-size: 24px;
   line-height: 30px;
   color: #202020;
 }
-@media screen and (max-width: 1024px) {
-  .explore__drini_logo {
-    bottom: 15px;
-    font-size: 12px;
-    line-height: 15px;
-  }
-}
-.explore__drini_text {
+.explore .item__subtitle {
+  font-family: "Readex Pro";
+  font-weight: 500;
   font-size: 16px;
   line-height: 20px;
   color: #959595;
 }
-@media screen and (max-width: 1024px) {
-  .explore__drini_text {
-    font-size: 8px;
-    line-height: 10px;
-  }
-}
-.explore__baron {
-  max-width: 256px;
+.explore .item__box {
   position: relative;
-  padding-bottom: 16px;
-  padding-left: 20px;
-}
-@media screen and (max-width: 1024px) {
-  .explore__baron {
-    max-width: 145px;
-    padding-bottom: 8px;
-    padding-left: 10px;
-  }
-}
-.explore__baron_logo, .explore__baron_text {
-  margin: 16px 20px;
-  align-items: center;
+  display: grid;
+  margin: 0 auto;
+  max-width: 255px;
+  padding: 11px 0;
+  bottom: 22%;
   text-align: center;
-  font-weight: 500;
   border-radius: 10px;
   background-color: #FFFFFF;
-}
-@media screen and (max-width: 1024px) {
-  .explore__baron_logo, .explore__baron_text {
-    margin: 8px 10px;
-    border-radius: 5px;
-  }
-}
-.explore__baron_logo {
-  position: absolute;
-  bottom: 30px;
-  font-size: 24px;
-  line-height: 30px;
-  color: #202020;
-}
-@media screen and (max-width: 1024px) {
-  .explore__baron_logo {
-    bottom: 15px;
-    font-size: 12px;
-    line-height: 15px;
-  }
-}
-.explore__baron_text {
-  font-size: 16px;
-  line-height: 20px;
-  color: #959595;
-}
-@media screen and (max-width: 1024px) {
-  .explore__baron_text {
-    font-size: 8px;
-    line-height: 10px;
-  }
-}
-.explore__trisik {
-  max-width: 256px;
-  position: relative;
-  padding-bottom: 16px;
-  padding-left: 20px;
-}
-@media screen and (max-width: 1024px) {
-  .explore__trisik {
-    max-width: 145px;
-    padding-bottom: 8px;
-    padding-left: 10px;
-  }
-}
-.explore__trisik_logo, .explore__trisik_text {
-  margin: 16px 20px;
-  align-items: center;
-  text-align: center;
-  font-weight: 500;
-  border-radius: 10px;
-  background-color: #FFFFFF;
-}
-@media screen and (max-width: 1024px) {
-  .explore__trisik_logo, .explore__trisik_text {
-    margin: 8px 10px;
-    border-radius: 5px;
-  }
-}
-.explore__trisik_logo {
-  position: absolute;
-  bottom: 30px;
-  font-size: 24px;
-  line-height: 30px;
-  color: #202020;
-}
-@media screen and (max-width: 1024px) {
-  .explore__trisik_logo {
-    bottom: 15px;
-    font-size: 12px;
-    line-height: 15px;
-  }
-}
-.explore__trisik_text {
-  font-size: 16px;
-  line-height: 20px;
-  color: #959595;
-}
-@media screen and (max-width: 1024px) {
-  .explore__trisik_text {
-    font-size: 8px;
-    line-height: 10px;
-  }
 }
 
+.conclusion {
+  padding-bottom: 110px;
+}
 .conclusion__container {
-  margin: 100px 130px;
+  max-width: 1180px;
+  margin: 0 auto;
+  border-radius: 16px;
+  background-color: #2B6F3E;
 }
 @media screen and (max-width: 1024px) {
   .conclusion__container {
     margin: 50px 60px;
   }
 }
-.conclusion__block {
-  padding-bottom: 77px;
-  text-align: center;
-  border-radius: 16px;
-  background: #2B6F3E;
-}
 .conclusion__title {
-  padding-top: 85px;
+  padding-top: 93px;
+  padding-bottom: 16px;
+  text-align: center;
   font-weight: 600;
   font-size: 32px;
   line-height: 40px;
   color: #FFFFFF;
 }
 .conclusion__text {
+  padding-bottom: 24px;
+  text-align: center;
   font-size: 18px;
   line-height: 22px;
   color: #FFFFFF;
+}
+.conclusion__btn {
+  text-align: center;
+  padding-bottom: 77px;
 }
 
 .footer {
   background: #2B6F3E;
 }
-.footer__container {
-  padding: 32px 0;
-}
 .footer__text {
-  align-items: center;
+  padding: 32px 0;
   text-align: center;
   font-size: 16px;
   line-height: 20px;

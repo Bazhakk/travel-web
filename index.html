@@ -27,7 +27,9 @@
           <a href="#" title="Dickover" class="main-menu__link link-anima">Dickaver</a>
           <a href="#" title="Place" class="main-menu__link link-anima">Place</a>
         </nav>
+
         <div class="burger" id="burger"></div>
+
         <nav class="mobile-menu" id="mobile-menu">
             <a class="mobile-menu__menu" href="#" title="Home" class="mobile-menu__link link-anima">Home</a>
             <a class="mobile-menu__menu" href="#" title="About" class="mobile-menu__link link-anima">About</a>
@@ -38,120 +40,153 @@
     </header>
 
     <main class="home">
-    <!--HERO-->
-    <section class="hero">
-        <div class="hero__container container">
-            <p class="hero__text" data-aos="fade-down" data-aos-delay="50">Discover your place</p>
-            <h1 class="hero__title" data-aos="fade-down" data-aos-delay="300">Explore The Best <b>Beautiful Beachs</b></h1>
-            <a href="#" title="Explore" class="button button_dark" data-aos="fade-down" data-aos-delay="650">Explore</a>
-            
-            <div class="social" data-aos="flip-left" data-aos-delay="900">
-                <a href="#" class="social__item social__twitter">
-                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M31.524 6.58266C30.4107 7.07599 29.2147 7.40932 27.9573 7.55999C29.2547 6.78371 30.2253 5.56195 30.688 4.12266C29.4691 4.84664 28.1351 5.35625 26.744 5.62932C25.8085 4.63048 24.5694 3.96843 23.2191 3.74596C21.8688 3.52349 20.4828 3.75305 19.2763 4.39899C18.0698 5.04494 17.1104 6.07114 16.5469 7.31826C15.9834 8.56538 15.8474 9.96366 16.16 11.296C13.6902 11.172 11.2742 10.5301 9.06856 9.41186C6.86296 8.29367 4.91712 6.72421 3.35733 4.80532C2.824 5.72532 2.51733 6.79199 2.51733 7.92799C2.51673 8.95065 2.76857 9.95765 3.2505 10.8596C3.73243 11.7616 4.42954 12.5307 5.28 13.0987C4.2937 13.0673 3.32916 12.8008 2.46666 12.3213V12.4013C2.46656 13.8356 2.96271 15.2258 3.87091 16.336C4.77911 17.4461 6.04342 18.2079 7.44933 18.492C6.53437 18.7396 5.57511 18.7761 4.644 18.5987C5.04066 19.8328 5.81332 20.912 6.85382 21.6852C7.89431 22.4584 9.15055 22.8869 10.4467 22.9107C8.24644 24.6379 5.52918 25.5748 2.732 25.5707C2.2365 25.5708 1.74143 25.5419 1.24933 25.484C4.08863 27.3096 7.39378 28.2784 10.7693 28.2747C22.196 28.2747 28.4427 18.8107 28.4427 10.6027C28.4427 10.336 28.436 10.0667 28.424 9.79999C29.6391 8.92129 30.6879 7.83318 31.5213 6.58666L31.524 6.58266Z" fill="#F8F8F8"/>
-                    </svg>
-                </a>
-                <a href="#" class="social__item social__facebook">
-                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M26.6667 4H5.33333C4.97971 4 4.64057 4.14048 4.39052 4.39052C4.14048 4.64057 4 4.97971 4 5.33333V26.6667C4 27.0203 4.14048 27.3594 4.39052 27.6095C4.64057 27.8595 4.97971 28 5.33333 28H16.82V18.72H13.7027V15.0867H16.82V12.42C16.82 9.32 18.7133 7.63067 21.4867 7.63067C22.4187 7.628 23.352 7.676 24.28 7.77333V11H22.3667C20.8627 11 20.5693 11.7173 20.5693 12.7667V15.08H24.1653L23.6987 18.7133H20.568V28H26.6667C27.0203 28 27.3594 27.8595 27.6095 27.6095C27.8595 27.3594 28 27.0203 28 26.6667V5.33333C28 4.97971 27.8595 4.64057 27.6095 4.39052C27.3594 4.14048 27.0203 4 26.6667 4Z" fill="#F8F8F8"/>
-                    </svg>                  
-                </a>
-                <a href="#" class="social__item social__instagram">
-                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.95331 1.42134C11.5173 1.34934 12.016 1.33334 16 1.33334C19.984 1.33334 20.4826 1.35068 22.0453 1.42134C23.608 1.49201 24.6746 1.74134 25.608 2.10268C26.5853 2.47201 27.472 3.04934 28.2053 3.79601C28.952 4.52801 29.528 5.41334 29.896 6.39201C30.2586 7.32534 30.5066 8.39201 30.5786 9.95201C30.6506 11.5187 30.6666 12.0173 30.6666 16C30.6666 19.984 30.6493 20.4827 30.5786 22.0467C30.508 23.6067 30.2586 24.6733 29.896 25.6067C29.528 26.5855 28.951 27.4723 28.2053 28.2053C27.472 28.952 26.5853 29.528 25.608 29.896C24.6746 30.2587 23.608 30.5067 22.048 30.5787C20.4826 30.6507 19.984 30.6667 16 30.6667C12.016 30.6667 11.5173 30.6493 9.95331 30.5787C8.39331 30.508 7.32665 30.2587 6.39331 29.896C5.41454 29.528 4.52774 28.951 3.79465 28.2053C3.04849 27.4729 2.47107 26.5865 2.10265 25.608C1.74131 24.6747 1.49331 23.608 1.42131 22.048C1.34931 20.4813 1.33331 19.9827 1.33331 16C1.33331 12.016 1.35065 11.5173 1.42131 9.95468C1.49198 8.39201 1.74131 7.32534 2.10265 6.39201C2.47161 5.41345 3.04947 4.52709 3.79598 3.79468C4.52803 3.04868 5.41394 2.47127 6.39198 2.10268C7.32531 1.74134 8.39198 1.49334 9.95198 1.42134H9.95331ZM21.9266 4.06134C20.38 3.99068 19.916 3.97601 16 3.97601C12.084 3.97601 11.62 3.99068 10.0733 4.06134C8.64265 4.12668 7.86665 4.36534 7.34931 4.56668C6.66531 4.83334 6.17598 5.14934 5.66265 5.66268C5.17604 6.13608 4.80155 6.71239 4.56665 7.34934C4.36531 7.86668 4.12665 8.64268 4.06131 10.0733C3.99065 11.62 3.97598 12.084 3.97598 16C3.97598 19.916 3.99065 20.38 4.06131 21.9267C4.12665 23.3573 4.36531 24.1333 4.56665 24.6507C4.80131 25.2867 5.17598 25.864 5.66265 26.3373C6.13598 26.824 6.71331 27.1987 7.34931 27.4333C7.86665 27.6347 8.64265 27.8733 10.0733 27.9387C11.62 28.0093 12.0826 28.024 16 28.024C19.9173 28.024 20.38 28.0093 21.9266 27.9387C23.3573 27.8733 24.1333 27.6347 24.6506 27.4333C25.3346 27.1667 25.824 26.8507 26.3373 26.3373C26.824 25.864 27.1986 25.2867 27.4333 24.6507C27.6346 24.1333 27.8733 23.3573 27.9386 21.9267C28.0093 20.38 28.024 19.916 28.024 16C28.024 12.084 28.0093 11.62 27.9386 10.0733C27.8733 8.64268 27.6346 7.86668 27.4333 7.34934C27.1666 6.66534 26.8506 6.17601 26.3373 5.66268C25.8639 5.17611 25.2876 4.80162 24.6506 4.56668C24.1333 4.36534 23.3573 4.12668 21.9266 4.06134ZM14.1266 20.5213C15.1729 20.9569 16.3378 21.0156 17.4226 20.6876C18.5073 20.3596 19.4445 19.6652 20.0741 18.723C20.7038 17.7808 20.9867 16.6492 20.8747 15.5215C20.7627 14.3938 20.2627 13.34 19.46 12.54C18.9483 12.0286 18.3296 11.6371 17.6484 11.3935C16.9673 11.15 16.2406 11.0605 15.5206 11.1315C14.8007 11.2025 14.1055 11.4322 13.4851 11.8042C12.8646 12.1761 12.3343 12.681 11.9324 13.2825C11.5305 13.884 11.2669 14.5671 11.1607 15.2826C11.0544 15.9982 11.1082 16.7284 11.318 17.4207C11.5279 18.113 11.8886 18.7502 12.3743 19.2863C12.8599 19.8225 13.4584 20.2443 14.1266 20.5213ZM10.6693 10.6693C11.3693 9.96931 12.2004 9.41401 13.115 9.03516C14.0297 8.6563 15.01 8.46131 16 8.46131C16.99 8.46131 17.9703 8.6563 18.8849 9.03516C19.7996 9.41401 20.6306 9.96931 21.3306 10.6693C22.0307 11.3694 22.586 12.2004 22.9648 13.1151C23.3437 14.0297 23.5387 15.01 23.5387 16C23.5387 16.99 23.3437 17.9703 22.9648 18.8849C22.586 19.7996 22.0307 20.6306 21.3306 21.3307C19.9169 22.7445 17.9994 23.5387 16 23.5387C14.0006 23.5387 12.0831 22.7445 10.6693 21.3307C9.25553 19.9169 8.46128 17.9994 8.46128 16C8.46128 14.0006 9.25553 12.0831 10.6693 10.6693ZM25.2106 9.58401C25.3841 9.42037 25.523 9.22359 25.6191 9.00531C25.7151 8.78703 25.7664 8.5517 25.7699 8.31325C25.7733 8.0748 25.7289 7.83807 25.6393 7.61709C25.5496 7.39611 25.4166 7.19536 25.2479 7.02673C25.0793 6.8581 24.8786 6.72502 24.6576 6.63537C24.4366 6.54571 24.1999 6.50131 23.9614 6.50479C23.723 6.50826 23.4876 6.55955 23.2693 6.65561C23.0511 6.75166 22.8543 6.89054 22.6906 7.06401C22.3724 7.40138 22.1982 7.84951 22.2049 8.31325C22.2117 8.777 22.3989 9.21985 22.7269 9.5478C23.0548 9.87575 23.4977 10.063 23.9614 10.0697C24.4252 10.0765 24.8733 9.90226 25.2106 9.58401Z" fill="#F8F8F8"/>
-                    </svg>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!--PRESENTATION-->
-    <section class="presentation">
-        <div class="presentation__box" data-aos="flip-left" data-aos-delay="50">
-            <img src="img/presentation.png" alt="Presentation image" class="presettation__img"/>
-            <div class="presentation__about">
-                <h2 class="presentation__title" data-aos="flip-left" data-aos-delay="100">More information about the best beachs</h2>
-                <p class="presentation__text" data-aos="flip-left" data-aos-delay="300">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, otestate. Quae omnia in nostra sententia, pursuit</p>
+        <!--HERO-->
+        <section class="hero">
+            <div class="hero__container container">
+                <p class="hero__text" data-aos="fade-down" data-aos-delay="50">Discover your place</p>
+                <h1 class="hero__title" data-aos="fade-down" data-aos-delay="300">Explore The Best <b>Beautiful Beachs</b></h1>
+                <a href="#" title="Explore" class="button button_hero" data-aos="fade-down" data-aos-delay="650">Explore</a>
                 
-            <div class="presentation__button" data-aos="flip-up" data-aos-delay="550">
-                <a href="#" title="Explore" class="button button_link">Explore Now</a>
-            </div>
-
-            </div>
-        </div>
-    </section>
-
-
-    <!--DISCOVER-->
-    <section class="discover">
-        <h2 class="discover__title" data-aos="zoom-in-left" data-aos-delay="150">Discover The Most <br>Attractive Places</h2>
-        <div class="discover__box">
-            <div class="discover__img" data-aos="flip-left" data-aos-delay="350" >
-                <img src="img/discover_1.jpg" alt="Pakis image" class="discover__img_1"/>
-                <div class="discover__pakis">
-                    <p class="discover__pakis_logo">Pakis Beach <br>
-                    <span class="discover__pakis_text">Karawang, Indonesian</span></p>
+                <div class="social" data-aos="flip-left" data-aos-delay="900">
+                    <a href="#" class="social__item social__twitter">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M31.524 6.58266C30.4107 7.07599 29.2147 7.40932 27.9573 7.55999C29.2547 6.78371 30.2253 5.56195 30.688 4.12266C29.4691 4.84664 28.1351 5.35625 26.744 5.62932C25.8085 4.63048 24.5694 3.96843 23.2191 3.74596C21.8688 3.52349 20.4828 3.75305 19.2763 4.39899C18.0698 5.04494 17.1104 6.07114 16.5469 7.31826C15.9834 8.56538 15.8474 9.96366 16.16 11.296C13.6902 11.172 11.2742 10.5301 9.06856 9.41186C6.86296 8.29367 4.91712 6.72421 3.35733 4.80532C2.824 5.72532 2.51733 6.79199 2.51733 7.92799C2.51673 8.95065 2.76857 9.95765 3.2505 10.8596C3.73243 11.7616 4.42954 12.5307 5.28 13.0987C4.2937 13.0673 3.32916 12.8008 2.46666 12.3213V12.4013C2.46656 13.8356 2.96271 15.2258 3.87091 16.336C4.77911 17.4461 6.04342 18.2079 7.44933 18.492C6.53437 18.7396 5.57511 18.7761 4.644 18.5987C5.04066 19.8328 5.81332 20.912 6.85382 21.6852C7.89431 22.4584 9.15055 22.8869 10.4467 22.9107C8.24644 24.6379 5.52918 25.5748 2.732 25.5707C2.2365 25.5708 1.74143 25.5419 1.24933 25.484C4.08863 27.3096 7.39378 28.2784 10.7693 28.2747C22.196 28.2747 28.4427 18.8107 28.4427 10.6027C28.4427 10.336 28.436 10.0667 28.424 9.79999C29.6391 8.92129 30.6879 7.83318 31.5213 6.58666L31.524 6.58266Z" fill="#F8F8F8"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social__item social__facebook">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M26.6667 4H5.33333C4.97971 4 4.64057 4.14048 4.39052 4.39052C4.14048 4.64057 4 4.97971 4 5.33333V26.6667C4 27.0203 4.14048 27.3594 4.39052 27.6095C4.64057 27.8595 4.97971 28 5.33333 28H16.82V18.72H13.7027V15.0867H16.82V12.42C16.82 9.32 18.7133 7.63067 21.4867 7.63067C22.4187 7.628 23.352 7.676 24.28 7.77333V11H22.3667C20.8627 11 20.5693 11.7173 20.5693 12.7667V15.08H24.1653L23.6987 18.7133H20.568V28H26.6667C27.0203 28 27.3594 27.8595 27.6095 27.6095C27.8595 27.3594 28 27.0203 28 26.6667V5.33333C28 4.97971 27.8595 4.64057 27.6095 4.39052C27.3594 4.14048 27.0203 4 26.6667 4Z" fill="#F8F8F8"/>
+                        </svg>                  
+                    </a>
+                    <a href="#" class="social__item social__instagram">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.95331 1.42134C11.5173 1.34934 12.016 1.33334 16 1.33334C19.984 1.33334 20.4826 1.35068 22.0453 1.42134C23.608 1.49201 24.6746 1.74134 25.608 2.10268C26.5853 2.47201 27.472 3.04934 28.2053 3.79601C28.952 4.52801 29.528 5.41334 29.896 6.39201C30.2586 7.32534 30.5066 8.39201 30.5786 9.95201C30.6506 11.5187 30.6666 12.0173 30.6666 16C30.6666 19.984 30.6493 20.4827 30.5786 22.0467C30.508 23.6067 30.2586 24.6733 29.896 25.6067C29.528 26.5855 28.951 27.4723 28.2053 28.2053C27.472 28.952 26.5853 29.528 25.608 29.896C24.6746 30.2587 23.608 30.5067 22.048 30.5787C20.4826 30.6507 19.984 30.6667 16 30.6667C12.016 30.6667 11.5173 30.6493 9.95331 30.5787C8.39331 30.508 7.32665 30.2587 6.39331 29.896C5.41454 29.528 4.52774 28.951 3.79465 28.2053C3.04849 27.4729 2.47107 26.5865 2.10265 25.608C1.74131 24.6747 1.49331 23.608 1.42131 22.048C1.34931 20.4813 1.33331 19.9827 1.33331 16C1.33331 12.016 1.35065 11.5173 1.42131 9.95468C1.49198 8.39201 1.74131 7.32534 2.10265 6.39201C2.47161 5.41345 3.04947 4.52709 3.79598 3.79468C4.52803 3.04868 5.41394 2.47127 6.39198 2.10268C7.32531 1.74134 8.39198 1.49334 9.95198 1.42134H9.95331ZM21.9266 4.06134C20.38 3.99068 19.916 3.97601 16 3.97601C12.084 3.97601 11.62 3.99068 10.0733 4.06134C8.64265 4.12668 7.86665 4.36534 7.34931 4.56668C6.66531 4.83334 6.17598 5.14934 5.66265 5.66268C5.17604 6.13608 4.80155 6.71239 4.56665 7.34934C4.36531 7.86668 4.12665 8.64268 4.06131 10.0733C3.99065 11.62 3.97598 12.084 3.97598 16C3.97598 19.916 3.99065 20.38 4.06131 21.9267C4.12665 23.3573 4.36531 24.1333 4.56665 24.6507C4.80131 25.2867 5.17598 25.864 5.66265 26.3373C6.13598 26.824 6.71331 27.1987 7.34931 27.4333C7.86665 27.6347 8.64265 27.8733 10.0733 27.9387C11.62 28.0093 12.0826 28.024 16 28.024C19.9173 28.024 20.38 28.0093 21.9266 27.9387C23.3573 27.8733 24.1333 27.6347 24.6506 27.4333C25.3346 27.1667 25.824 26.8507 26.3373 26.3373C26.824 25.864 27.1986 25.2867 27.4333 24.6507C27.6346 24.1333 27.8733 23.3573 27.9386 21.9267C28.0093 20.38 28.024 19.916 28.024 16C28.024 12.084 28.0093 11.62 27.9386 10.0733C27.8733 8.64268 27.6346 7.86668 27.4333 7.34934C27.1666 6.66534 26.8506 6.17601 26.3373 5.66268C25.8639 5.17611 25.2876 4.80162 24.6506 4.56668C24.1333 4.36534 23.3573 4.12668 21.9266 4.06134ZM14.1266 20.5213C15.1729 20.9569 16.3378 21.0156 17.4226 20.6876C18.5073 20.3596 19.4445 19.6652 20.0741 18.723C20.7038 17.7808 20.9867 16.6492 20.8747 15.5215C20.7627 14.3938 20.2627 13.34 19.46 12.54C18.9483 12.0286 18.3296 11.6371 17.6484 11.3935C16.9673 11.15 16.2406 11.0605 15.5206 11.1315C14.8007 11.2025 14.1055 11.4322 13.4851 11.8042C12.8646 12.1761 12.3343 12.681 11.9324 13.2825C11.5305 13.884 11.2669 14.5671 11.1607 15.2826C11.0544 15.9982 11.1082 16.7284 11.318 17.4207C11.5279 18.113 11.8886 18.7502 12.3743 19.2863C12.8599 19.8225 13.4584 20.2443 14.1266 20.5213ZM10.6693 10.6693C11.3693 9.96931 12.2004 9.41401 13.115 9.03516C14.0297 8.6563 15.01 8.46131 16 8.46131C16.99 8.46131 17.9703 8.6563 18.8849 9.03516C19.7996 9.41401 20.6306 9.96931 21.3306 10.6693C22.0307 11.3694 22.586 12.2004 22.9648 13.1151C23.3437 14.0297 23.5387 15.01 23.5387 16C23.5387 16.99 23.3437 17.9703 22.9648 18.8849C22.586 19.7996 22.0307 20.6306 21.3306 21.3307C19.9169 22.7445 17.9994 23.5387 16 23.5387C14.0006 23.5387 12.0831 22.7445 10.6693 21.3307C9.25553 19.9169 8.46128 17.9994 8.46128 16C8.46128 14.0006 9.25553 12.0831 10.6693 10.6693ZM25.2106 9.58401C25.3841 9.42037 25.523 9.22359 25.6191 9.00531C25.7151 8.78703 25.7664 8.5517 25.7699 8.31325C25.7733 8.0748 25.7289 7.83807 25.6393 7.61709C25.5496 7.39611 25.4166 7.19536 25.2479 7.02673C25.0793 6.8581 24.8786 6.72502 24.6576 6.63537C24.4366 6.54571 24.1999 6.50131 23.9614 6.50479C23.723 6.50826 23.4876 6.55955 23.2693 6.65561C23.0511 6.75166 22.8543 6.89054 22.6906 7.06401C22.3724 7.40138 22.1982 7.84951 22.2049 8.31325C22.2117 8.777 22.3989 9.21985 22.7269 9.5478C23.0548 9.87575 23.4977 10.063 23.9614 10.0697C24.4252 10.0765 24.8733 9.90226 25.2106 9.58401Z" fill="#F8F8F8"/>
+                        </svg>
+                    </a>
                 </div>
             </div>
+        </section>
 
-            <div class="discover__img" data-aos="flip-left" data-aos-delay="650">
-                <img src="img/discover_2.jpg" alt="Suluban image" class="discover__img_2"/>
-                <div class="discover__suluban">
-                    <p class="discover__suluban_logo">Suluban Beach <br>
-                    <span class="discover__suluban_text">Bali, Indonesian</span></p>
+        <!--PRESENTATION-->
+        <section class="presentation">
+            <div class="presentation__box" data-aos="flip-left" data-aos-delay="50">
+                <img src="img/presentation.png" alt="Presentation image" class="presettation__img"/>
+                <div class="presentation__about">
+                    <h2 class="presentation__title" data-aos="flip-left" data-aos-delay="100">More information about the best beachs</h2>
+                    <p class="presentation__text" data-aos="flip-left" data-aos-delay="300">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, otestate. Quae omnia in nostra sententia, pursuit</p>
+                    
+                <div class="presentation__button" data-aos="flip-up" data-aos-delay="550">
+                    <a href="#" title="Explore" class="button button_presentation">Explore Now</a>
+                </div>
+
                 </div>
             </div>
+        </section>
 
-            <div class="discover__img" data-aos="flip-left" data-aos-delay="950">
-                <img src="img/discover_3.jpg" alt="Karimun image" class="discover__img_3"/>
-                <div class="discover__karimun">
-                    <p class="discover__karimun_logo">Karimun Java <br>
-                    <span class="discover__karimun_text">Jawa Tengah, Indonesian</span></p>
+        <!--DISCOVER-->
+        <section class="discover">
+            <div class="discover__container">
+                <h2 class="discover__title" data-aos="zoom-in-left" data-aos-delay="150">Discover The Most Attractive Places</h2>
+            
+                <ul class="item">
+                    <li class="item__block">
+                        <img src="img/discover_1.jpg" alt="Pakis image" class="item__img_1" data-aos="flip-left" data-aos-delay="350"/>
+                        <div class="item__box">
+                            <span class="item__title">Pakis Beach </span>
+                            <span class="item__text">Karawang, Indonesian</span>
+                        </div>
+                    </li>
+
+                    <li class="item__block">
+                        <img src="img/discover_2.jpg" alt="Pakis image" class="item__img_2" data-aos="flip-left" data-aos-delay="350"/>
+                        <div class="item__box-second">
+                            <span class="item__title">Suluban Beach </span>
+                            <span class="item__text">Bali, Indonesian</span>
+                        </div>
+                    </li>
+
+                    <li class="item__block">
+                        <img src="img/discover_3.jpg" alt="Pakis image" class="item__img_3" data-aos="flip-left" data-aos-delay="350"/>
+                        <div class="item__box-third">
+                            <span class="item__title">Karimun Java</span>
+                            <span class="item__text">Jawa Tengah, Indonesian</span>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+            
+            <!-- <div class="discover__box">
+                <div class="discover__img" data-aos="flip-left" data-aos-delay="350" >
+                    <img src="img/discover_1.jpg" alt="Pakis image" class="discover__img_1"/>
+                    <div class="discover__pakis">
+                        <p class="discover__pakis_logo">Pakis Beach <br>
+                        <span class="discover__pakis_text">Karawang, Indonesian</span></p>
+                    </div>
+                </div>
+
+                <div class="discover__img" data-aos="flip-left" data-aos-delay="650">
+                    <img src="img/discover_2.jpg" alt="Suluban image" class="discover__img_2"/>
+                    <div class="discover__suluban">
+                        <p class="discover__suluban_logo">Suluban Beach <br>
+                        <span class="discover__suluban_text">Bali, Indonesian</span></p>
+                    </div>
+                </div>
+
+                <div class="discover__img" data-aos="flip-left" data-aos-delay="950">
+                    <img src="img/discover_3.jpg" alt="Karimun image" class="discover__img_3"/>
+                    <div class="discover__karimun">
+                        <p class="discover__karimun_logo">Karimun Java <br>
+                        <span class="discover__karimun_text">Jawa Tengah, Indonesian</span></p>
+                    </div>
+                </div>
+            </div> -->
+        </section>
+
+        <!--EXPLORE-->
+        <section class="explore">
+            <h2 class="explore__title" data-aos="zoom-in-left" data-aos-delay="150">Explore Beautiful Place</h2>
+
+            <ul class="item">
+                <li class="item__block">
+                    <img src="img/explore_1.png" alt="image" class="item__img" data-aos="zoom-in-left" data-aos-delay="150"/>
+                    <div class="item__box">
+                        <span class="item__title">Drini Beach</span>
+                        <span class="item__subtitle">Yogyakarta, Indonesia</span>
+                    </div>
+                </li>
+
+                <li class="item__block">
+                    <img src="img/explore_2.jpg" alt="Img" class="item__img" data-aos="zoom-in-left" data-aos-delay="150"/>
+                    <div class="item__box">
+                        <span class="item__title">Baron Beach</span>
+                        <span class="item__subtitle">Yogyakarta, Indonesia</span>
+                    </div>
+                </li>
+
+                <li class="item__block">
+                    <img src="img/explore_3.jpg" alt="Drini image" class="item__img" data-aos="zoom-in-left" data-aos-delay="150"/>
+                    <div class="item__box">
+                        <span class="item__title">Trisik Beach</span>
+                        <span class="item__subtitle">Yogyakarta, Indonesia</span>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!--CONCLUSION-->
+        <section class="conclusion">
+            <div class="conclusion__container" data-aos="flip-left" data-aos-delay="50">
+                <h3 class="conclusion__title" data-aos="fade-down" data-aos-delay="150">Traveling and Enjoy To Explore</h3>
+                <p class="conclusion__text" data-aos="fade-down" data-aos-delay="250">we have many beach to explore and<br> promo special for you</p>
+                
+                <div class="conclusion__btn">
+                    <button href="#" title="Join" class="button button_conclusion" data-aos="fade-down" data-aos-delay="350">Join Newsletter</button>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!--EXPLORE-->
-    <section class="explore">
-        <h2 class="explore__title" data-aos="zoom-in-left" data-aos-delay="150">Explore Beautiful Place</h2>
-        <div class="explore__box">
-            <div class="explore__img" data-aos="flip-left" data-aos-delay="350">
-                <img src="img/explore_1.png" alt="Drini image" class="explore__img_1"/>
-            <div class="explore__drini">
-                <p class="explore__drini_logo">Drini Beach <br>
-                <span class="explore__drini_text">Yogyakarta, Indonesia</span></p>
-            </div>
-        </div>
-
-        <div class="explore__img" data-aos="flip-left" data-aos-delay="650">
-            <img src="img/explore_2.jpg" alt="Baron image" class="explore__img_2"/>
-            <div class="explore__baron">
-                <p class="explore__baron_logo">Baron Beach <br>
-                <span class="explore__baron_text">Yogyakarta, Indonesia</span></p>
-            </div>
-        </div>
-
-            <div class="explore__img" data-aos="flip-left" data-aos-delay="950">
-                <img src="img/explore_3.jpg" alt="Trisik image" class="explore__img_3"/>
-                <div class="explore__trisik">
-                    <p class="explore__trisik_logo">Trisik Beach <br>
-                    <span class="explore__trisik_text">Yogyakarta, Indonesia</span></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--CONCLUSION-->
-    <section class="conclusion__container">
-        <div class="conclusion__block" data-aos="flip-left" data-aos-delay="50">
-            <h3 class="conclusion__title" data-aos="fade-down" data-aos-delay="150">Traveling and Enjoy To Explore</h3>
-            <p class="conclusion__text" data-aos="fade-down" data-aos-delay="250">we have many beach to explore and<br> promo special for you</p>
-            <a href="#" title="Join" class="button button_light" data-aos="fade-down" data-aos-delay="350">Join Newsletter</a>
-        </div>
-    </section>
-    
-</main>
+        </section>
+        
+    </main>
 
     <!--FOOTER-->
     <footer class="footer">
